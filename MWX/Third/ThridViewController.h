@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThridViewController.h
 //  MWX
 //
 //  Created by WeibaYeQiang on 16/5/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ThridViewController : UIViewController
 
 @end
-
