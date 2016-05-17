@@ -10,6 +10,7 @@
 #import "Common.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "RegisterController.h"
+#import "AutoHideHub.h"
 
 @interface LoginTableViewController ()
 
@@ -64,9 +65,11 @@
     [AVUser logInWithUsernameInBackground:_account.text password:_password.text block:^(AVUser *user, NSError *error) {
         if (error) {
             NSLog(@"登陆失败,error:%@",error);
+            [AutoHideHub showAutoHideHubInTop:@"登陆失败"];
         } else {
             NSLog(@"登陆成功");
             [self dismissViewControllerAnimated:YES completion:nil];
+            [AutoHideHub showAutoHideHubInTop:@"登陆成功"];
         }
     }];
 }
@@ -75,6 +78,9 @@
 - (void)registerAction {
     
     RegisterController *registerController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"registerVC"];
+    registerController.loginBlock = ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    };
     [self presentViewController:registerController animated:YES completion:nil];
     
 }

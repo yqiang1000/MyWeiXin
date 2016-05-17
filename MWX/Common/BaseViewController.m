@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "Common.h"
+#import "AutoHideHub.h"
 
 @interface BaseViewController ()
 
@@ -26,11 +27,13 @@
 }
 
 - (void)userIsLogined {
-    [AVUser logOut];
+//    [AVUser logOut];
     AVUser *user = [AVUser currentUser];
     if (user == nil) {
         LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
         [self presentViewController:loginVC animated:YES completion:nil];
+    } else {
+        [AutoHideHub showAutoHideHubInTop:@"已经登陆"];
     }
 }
 

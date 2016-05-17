@@ -287,7 +287,9 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cancelButton" destination="an3-D0-Zo3" id="KGS-2B-soh"/>
+                        <outlet property="account" destination="gH2-En-RnP" id="dcS-Kr-iwN"/>
+                        <outlet property="password" destination="VGb-83-hgA" id="8ws-aL-Xmb"/>
+                        <outlet property="registerButton" destination="On2-8N-zma" id="kaV-qs-cIn"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30i-0E-KHt" userLabel="First Responder" sceneMemberID="firstResponder"/>

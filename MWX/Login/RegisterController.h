@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^LoginBlock)(void);
+
 @interface RegisterController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 - (IBAction)cancelAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *account;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
+
+@property (copy, nonatomic) LoginBlock loginBlock;
 
 @end

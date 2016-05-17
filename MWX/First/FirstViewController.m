@@ -15,11 +15,13 @@
 
 @implementation FirstViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self userIsLogined];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"微信"];
-
-    [self userIsLogined];
     
 }
 

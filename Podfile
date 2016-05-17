@@ -3,4 +3,5 @@ target ‘MWX’ do
 	pod 'AVOSCloudIM', '3.1.2.9'
 	pod ‘ReactiveCocoa’, ‘2.0’
 	pod ‘IQKeyboardManager’
+	pod ‘MBProgressHUD’
 end

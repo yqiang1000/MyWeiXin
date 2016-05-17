@@ -29,6 +29,7 @@
 		B88993871CEAC8F100E12523 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B88993861CEAC8F100E12523 /* icon.png */; };
 		B889938A1CEB049A00E12523 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993891CEB049A00E12523 /* RegisterController.m */; };
 		B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889938C1CEB07CB00E12523 /* BaseViewController.m */; };
+		B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993901CEB0A7300E12523 /* AutoHideHub.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		B88993891CEB049A00E12523 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		B889938B1CEB07CB00E12523 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		B889938C1CEB07CB00E12523 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B889938F1CEB0A7300E12523 /* AutoHideHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoHideHub.h; sourceTree = "<group>"; };
+		B88993901CEB0A7300E12523 /* AutoHideHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoHideHub.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 		B88993061CEAAE5D00E12523 /* MWX */ = {
 			isa = PBXGroup;
 			children = (
+				B889938E1CEB0A7300E12523 /* AutoHideHub */,
 				B889933A1CEAB07A00E12523 /* Common */,
 				B889933E1CEAB07A00E12523 /* First */,
 				B88993421CEAB07A00E12523 /* Fourth */,
@@ -372,6 +376,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B889938E1CEB0A7300E12523 /* AutoHideHub */ = {
+			isa = PBXGroup;
+			children = (
+				B889938F1CEB0A7300E12523 /* AutoHideHub.h */,
+				B88993901CEB0A7300E12523 /* AutoHideHub.m */,
+			);
+			path = AutoHideHub;
+			sourceTree = "<group>";
+		};
 		BB3C47557431E4AE3AEEDFC3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +598,7 @@
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,
 				B88993091CEAAE5D00E12523 /* main.m in Sources */,
+				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
 				B88993541CEAB09000E12523 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

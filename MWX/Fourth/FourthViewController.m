@@ -7,6 +7,7 @@
 //
 
 #import "FourthViewController.h"
+#import "Common.h"
 
 @interface FourthViewController ()
 
@@ -14,9 +15,23 @@
 
 @implementation FourthViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self userIsLogined];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
+    button.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:button];
+    [button addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+- (void)action {
+    [AVUser logOut];
+    [self userIsLogined];
 }
 
 - (void)didReceiveMemoryWarning {
