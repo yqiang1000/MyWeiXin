@@ -27,6 +27,8 @@
 		B88993821CEAC50200E12523 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937E1CEAC50200E12523 /* libIQKeyboardManager.a */; };
 		B88993831CEAC50200E12523 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937F1CEAC50200E12523 /* libReactiveCocoa.a */; };
 		B88993871CEAC8F100E12523 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B88993861CEAC8F100E12523 /* icon.png */; };
+		B889938A1CEB049A00E12523 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993891CEB049A00E12523 /* RegisterController.m */; };
+		B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889938C1CEB07CB00E12523 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		B889937E1CEAC50200E12523 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
 		B889937F1CEAC50200E12523 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		B88993861CEAC8F100E12523 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B88993881CEB049A00E12523 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		B88993891CEB049A00E12523 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		B889938B1CEB07CB00E12523 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B889938C1CEB07CB00E12523 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,8 @@
 			children = (
 				B88993641CEAB15100E12523 /* BaseNavigationController.h */,
 				B88993651CEAB15100E12523 /* BaseNavigationController.m */,
+				B889938B1CEB07CB00E12523 /* BaseViewController.h */,
+				B889938C1CEB07CB00E12523 /* BaseViewController.m */,
 				B88993761CEAB81D00E12523 /* BaseTabBarController.h */,
 				B88993771CEAB81D00E12523 /* BaseTabBarController.m */,
 				B88993671CEAB15F00E12523 /* Common.h */,
@@ -267,6 +275,8 @@
 			children = (
 				B88993581CEAB0CC00E12523 /* LoginTableViewController.h */,
 				B88993591CEAB0CC00E12523 /* LoginTableViewController.m */,
+				B88993881CEB049A00E12523 /* RegisterController.h */,
+				B88993891CEB049A00E12523 /* RegisterController.m */,
 				B88993861CEAC8F100E12523 /* icon.png */,
 				B88993471CEAB07A00E12523 /* Model */,
 				B88993481CEAB07A00E12523 /* ModelView */,
@@ -567,8 +577,10 @@
 			files = (
 				B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */,
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
+				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
 				B88993571CEAB0AA00E12523 /* FourthViewController.m in Sources */,
+				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,

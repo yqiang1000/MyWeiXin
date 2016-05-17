@@ -10,4 +10,7 @@
 
 @interface RegisterController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+- (IBAction)cancelAction:(UIButton *)sender;
+
 @end

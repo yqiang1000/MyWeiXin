@@ -9,6 +9,7 @@
 #import "LoginTableViewController.h"
 #import "Common.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RegisterController.h"
 
 @interface LoginTableViewController ()
 
@@ -48,8 +49,13 @@
         [self loginAction];
     }];
     
+    [[self.registerButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [self registerAction];
+    }];
+    
 }
 
+#pragma mark - login
 - (void)loginAction {
     
     AVUser *user = [AVUser user];
@@ -63,6 +69,13 @@
     }];
 }
 
+#pragma mark - register
+- (void)registerAction {
+    
+    RegisterController *registerController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"registerVC"];
+    [self presentViewController:registerController animated:YES completion:nil];
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +90,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 

@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "Common.h"
 
 @interface BaseViewController ()
 
@@ -22,6 +23,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)userIsLogined {
+    [AVUser logOut];
+    AVUser *user = [AVUser currentUser];
+    if (user == nil) {
+        LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
+        [self presentViewController:loginVC animated:YES completion:nil];
+    }
 }
 
 /*
