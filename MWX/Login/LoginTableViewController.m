@@ -7,6 +7,8 @@
 //
 
 #import "LoginTableViewController.h"
+#import "Common.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface LoginTableViewController ()
 
@@ -17,12 +19,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.login.layer.cornerRadius = 5;
+    self.login.layer.masksToBounds = YES;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self createSignal];
+    
 }
+
+- (void)createSignal {
+    RACSignal *accountSignal = [self.account.rac_textSignal map:^id(NSString *text) {
+        self.account.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
+        return @(text.length > 0 ? YES: NO);
+    }];
+    RACSignal *passwordSignal = [self.password.rac_textSignal map:^id(NSString *text) {
+        self.password.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
+        return @(text.length > 0 ? YES: NO);
+    }];
+    
+    RACSignal *loginSignal = [[RACSignal combineLatest:@[accountSignal, passwordSignal] reduce:^id(NSNumber *accountNum, NSNumber *passwordNum){
+        return @([accountNum boolValue] && [passwordNum boolValue]);
+    }] subscribeNext:^(NSNumber *num) {
+        
+        self.login.alpha = [num boolValue]?1.0:0.5;
+        self.login.enabled = [num boolValue];
+    }];
+    
+    [[self.login rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [self loginAction];
+    }];
+    
+}
+
+- (void)loginAction {
+    
+    AVUser *user = [AVUser user];
+    [AVUser logInWithUsernameInBackground:_account.text password:_password.text block:^(AVUser *user, NSError *error) {
+        if (error) {
+            NSLog(@"登陆失败,error:%@",error);
+        } else {
+            NSLog(@"登陆成功");
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -32,67 +73,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 5;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

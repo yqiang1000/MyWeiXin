@@ -10,4 +10,6 @@
 
 @interface BaseNavigationController : UINavigationController
 
+- (void)setTitle:(NSString *)title;
+
 @end

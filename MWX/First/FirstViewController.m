@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "Common.h"
 
 @interface FirstViewController ()
 
@@ -16,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTitle:@"微信"];
+    
+    AVUser *user = [AVUser currentUser];
+    if (user == nil) {
+        LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
+        [self presentViewController:loginVC animated:YES completion:nil];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

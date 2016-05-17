@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AVOSCloud" "${PODS_ROOT}/Headers/Public/AVOSCloudIM" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/ReactiveCocoa"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/AVOSCloud" $(inherited) "${PODS_ROOT}/AVOSCloudIM"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AVOSCloud" -isystem "${PODS_ROOT}/Headers/Public/AVOSCloudIM" -isystem "${PODS_ROOT}/Headers/Public/IQKeyboardManager" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa"
+OTHER_LDFLAGS = $(inherited) -ObjC -all_load -undefined dynamic_lookup -l"AVOSCloud" -l"AVOSCloudIM" -l"AVOSCloudIMLib" -l"AVOSCloudLib" -l"IQKeyboardManager" -l"ReactiveCocoa" -l"icucore" -l"sqlite3" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

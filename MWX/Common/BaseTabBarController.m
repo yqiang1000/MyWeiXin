@@ -7,6 +7,8 @@
 //
 
 #import "BaseTabBarController.h"
+#import "Common.h"
+#define Num 4
 
 @interface BaseTabBarController ()
 
@@ -16,22 +18,48 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setTabBar];
 }
+
+- (void)setTabBar {
+    
+    for (UIView *view in self.tabBar.subviews) {
+        Class class = NSClassFromString(@"UITabBarButton");
+        if ([view isKindOfClass:class]) {
+            [view removeFromSuperview];
+        }
+    }
+    
+    
+    
+    NSArray *bNames = @[@"微信",@"通讯录",@"发现",@"我"];
+    CGFloat bWidth = kWidth / Num;
+    UIImageView *selectView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, bWidth, 49)];
+    selectView.backgroundColor = [UIColor darkGrayColor];
+    [self.tabBar addSubview:selectView];
+    
+    for (NSInteger i = 0; i < Num; i++) {
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(i * bWidth, 0, bWidth, 49)];
+        
+        [button setTitle:bNames[i] forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor purpleColor]];
+        button.tag = i;
+        [button addTarget:self action:@selector(barButtonSelectd:) forControlEvents:UIControlEventTouchUpInside];
+        [self.tabBar addSubview:button];
+    }
+}
+
+
+- (void)barButtonSelectd:(UIButton *)button {
+    NSInteger tag = button.tag;
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
