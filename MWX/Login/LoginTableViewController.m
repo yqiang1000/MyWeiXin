@@ -40,6 +40,8 @@
         return @([accountNum boolValue] && [passwordNum boolValue]);
     }] subscribeNext:^(NSNumber *num) {
         
+        
+        
         self.login.alpha = [num boolValue]?1.0:0.5;
         self.login.enabled = [num boolValue];
     }];
