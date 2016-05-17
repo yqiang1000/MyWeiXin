@@ -15,10 +15,6 @@
 
 @implementation FourthViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [self userIsLogined];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
