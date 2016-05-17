@@ -36,7 +36,7 @@
     if (user == nil) {
         LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
         [self presentViewController:loginVC animated:YES completion:nil];
-    } 
+    }
 }
 
 

@@ -43,35 +43,42 @@
         self.registerButton.enabled = [num boolValue];
     }];
     
-    [[self.registerButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [self registerAction];
+    [[[[self.registerButton rac_signalForControlEvents:UIControlEventTouchUpInside] doNext:^(id x) {
+        self.registerButton.enabled = NO;
+        self.registerButton.alpha = 0.5;
+    }] flattenMap:^RACStream *(id value) {
+        return [self registerSignal];
+    }] subscribeNext:^(NSError *error) {
+        self.registerButton.enabled = YES;
+        self.registerButton.alpha = 1.0;
+        if (!error) {
+            NSLog(@"注册成功");
+            [AutoHideHub showAutoHideHubInTop:@"注册成功"];
+            if (self.loginBlock) {
+                self.loginBlock();
+            }
+            [self cancelAction:nil];
+        } else {
+            NSLog(@"注册失败,error:%@",error);
+            NSString *string = [error.userInfo valueForKey:@"error"];
+            [AutoHideHub showAutoHideHubInTop:string];
+        }
     }];
     
 }
 
 
-- (void)registerAction {
-    
-    AVUser *user = [AVUser user];
-    user.username = self.account.text;
-    user.password = self.password.text;
-    
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            NSLog(@"注册成功");
-            [AutoHideHub showAutoHideHubInTop:@"注册成功"];
-            [self dismissViewControllerAnimated:YES completion:nil];
-            if (self.loginBlock) {
-                self.loginBlock();
-            }
-            
-        } else {
-            NSLog(@"注册失败");
-            [AutoHideHub showAutoHideHubInTop:@"注册失败"];
-        }
+- (RACSignal *)registerSignal {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        AVUser *user = [AVUser user];
+        user.username = self.account.text;
+        user.password = self.password.text;
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            [subscriber sendNext:error];
+            [subscriber sendCompleted];
+        }];
+        return nil;
     }];
-    
-
 }
 
 #pragma mark - Table view data source

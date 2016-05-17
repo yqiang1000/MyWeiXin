@@ -30,11 +30,11 @@
 
 - (void)createSignal {
     RACSignal *accountSignal = [self.account.rac_textSignal map:^id(NSString *text) {
-        self.account.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
+//        self.account.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
         return @(text.length > 0 ? YES: NO);
     }];
     RACSignal *passwordSignal = [self.password.rac_textSignal map:^id(NSString *text) {
-        self.password.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
+//        self.password.backgroundColor = text.length > 0 ? [UIColor orangeColor]:[UIColor clearColor];
         return @(text.length > 0 ? YES: NO);
     }];
     
@@ -48,8 +48,21 @@
         self.login.enabled = [num boolValue];
     }];
     
-    [[self.login rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [self loginAction];
+    [[[[self.login rac_signalForControlEvents:UIControlEventTouchUpInside] doNext:^(id x) {
+        self.login.alpha = 0.5;
+        self.login.enabled = NO;
+    }] flattenMap:^RACStream *(id value) {
+        return [self signInSignal];
+    }] subscribeNext:^(NSError *error) {
+        self.login.alpha = 1.0;
+        self.login.enabled = YES;
+        if (!error) {
+            [AutoHideHub showAutoHideHubInTop:@"登陆成功"];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            NSLog(@"登陆失败,error:%@",error);
+            [AutoHideHub showAutoHideHubInTop:@"用户名或密码错误"];
+        }
     }];
     
     [[self.registerButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
@@ -59,20 +72,18 @@
 }
 
 #pragma mark - login
-- (void)loginAction {
-    
-    AVUser *user = [AVUser user];
-    [AVUser logInWithUsernameInBackground:_account.text password:_password.text block:^(AVUser *user, NSError *error) {
-        if (error) {
-            NSLog(@"登陆失败,error:%@",error);
-            [AutoHideHub showAutoHideHubInTop:@"登陆失败"];
-        } else {
-            NSLog(@"登陆成功");
-            [self dismissViewControllerAnimated:YES completion:nil];
-            [AutoHideHub showAutoHideHubInTop:@"登陆成功"];
-        }
+
+- (RACSignal *)signInSignal {
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [AVUser logInWithUsernameInBackground:self.account.text password:self.password.text block:^(AVUser *user, NSError *error) {
+            
+            [subscriber sendNext:error];
+            [subscriber sendCompleted];
+        }];
+        return nil;
     }];
 }
+
 
 #pragma mark - register
 - (void)registerAction {
