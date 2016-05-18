@@ -14,6 +14,12 @@
 		B83C35121CEC00AB0054C471 /* libPods-MWX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350C1CEC00AB0054C471 /* libPods-MWX.a */; };
 		B83C35131CEC00AB0054C471 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */; };
 		B83C352C1CEC047C0054C471 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B83C352B1CEC047C0054C471 /* icon.png */; };
+		B83C35321CEC4B180054C471 /* ListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35311CEC4B180054C471 /* ListTableView.m */; };
+		B83C35391CEC4BFA0054C471 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35371CEC4BFA0054C471 /* ListCell.m */; };
+		B83C353A1CEC4BFA0054C471 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83C35381CEC4BFA0054C471 /* ListCell.xib */; };
+		B83C35491CEC52F10054C471 /* SetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35481CEC52F10054C471 /* SetTableView.m */; };
+		B83C35521CEC53A30054C471 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35501CEC53A30054C471 /* SetCell.m */; };
+		B83C35531CEC53A30054C471 /* SetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83C35511CEC53A30054C471 /* SetCell.xib */; };
 		B88993091CEAAE5D00E12523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993081CEAAE5D00E12523 /* main.m */; };
 		B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B889930B1CEAAE5D00E12523 /* AppDelegate.m */; };
 		B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88993101CEAAE5D00E12523 /* Main.storyboard */; };
@@ -73,6 +79,16 @@
 		B83C350C1CEC00AB0054C471 /* libPods-MWX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MWX.a"; path = "Pods/../build/Debug-iphoneos/libPods-MWX.a"; sourceTree = "<group>"; };
 		B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		B83C352B1CEC047C0054C471 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B83C35301CEC4B180054C471 /* ListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableView.h; path = MWX/Second/ListTableView.h; sourceTree = SOURCE_ROOT; };
+		B83C35311CEC4B180054C471 /* ListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableView.m; path = MWX/Second/ListTableView.m; sourceTree = SOURCE_ROOT; };
+		B83C35361CEC4BFA0054C471 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCell.h; path = MWX/Second/ListCell.h; sourceTree = SOURCE_ROOT; };
+		B83C35371CEC4BFA0054C471 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = MWX/Second/ListCell.m; sourceTree = SOURCE_ROOT; };
+		B83C35381CEC4BFA0054C471 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCell.xib; path = MWX/Second/ListCell.xib; sourceTree = SOURCE_ROOT; };
+		B83C35471CEC52F10054C471 /* SetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetTableView.h; path = MWX/Fourth/SetTableView.h; sourceTree = SOURCE_ROOT; };
+		B83C35481CEC52F10054C471 /* SetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetTableView.m; path = MWX/Fourth/SetTableView.m; sourceTree = SOURCE_ROOT; };
+		B83C354F1CEC53A30054C471 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetCell.h; path = MWX/Fourth/SetCell.h; sourceTree = SOURCE_ROOT; };
+		B83C35501CEC53A30054C471 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCell.m; path = MWX/Fourth/SetCell.m; sourceTree = SOURCE_ROOT; };
+		B83C35511CEC53A30054C471 /* SetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetCell.xib; path = MWX/Fourth/SetCell.xib; sourceTree = SOURCE_ROOT; };
 		B88993041CEAAE5D00E12523 /* MWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88993081CEAAE5D00E12523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B889930A1CEAAE5D00E12523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -283,6 +299,9 @@
 		B88993441CEAB07A00E12523 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				B83C354F1CEC53A30054C471 /* SetCell.h */,
+				B83C35501CEC53A30054C471 /* SetCell.m */,
+				B83C35511CEC53A30054C471 /* SetCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -290,6 +309,8 @@
 		B88993451CEAB07A00E12523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35471CEC52F10054C471 /* SetTableView.h */,
+				B83C35481CEC52F10054C471 /* SetTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +373,9 @@
 		B889934C1CEAB07A00E12523 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35361CEC4BFA0054C471 /* ListCell.h */,
+				B83C35371CEC4BFA0054C471 /* ListCell.m */,
+				B83C35381CEC4BFA0054C471 /* ListCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -359,6 +383,8 @@
 		B889934D1CEAB07A00E12523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35301CEC4B180054C471 /* ListTableView.h */,
+				B83C35311CEC4B180054C471 /* ListTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,8 +578,10 @@
 			files = (
 				B83C352C1CEC047C0054C471 /* icon.png in Resources */,
 				B88993171CEAAE5D00E12523 /* LaunchScreen.storyboard in Resources */,
+				B83C35531CEC53A30054C471 /* SetCell.xib in Resources */,
 				B88993141CEAAE5D00E12523 /* Assets.xcassets in Resources */,
 				B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */,
+				B83C353A1CEC4BFA0054C471 /* ListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,11 +654,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83C35521CEC53A30054C471 /* SetCell.m in Sources */,
 				B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */,
+				B83C35391CEC4BFA0054C471 /* ListCell.m in Sources */,
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
+				B83C35321CEC4B180054C471 /* ListTableView.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
 				B88993571CEAB0AA00E12523 /* FourthViewController.m in Sources */,
+				B83C35491CEC52F10054C471 /* SetTableView.m in Sources */,
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,

@@ -58,7 +58,7 @@
         self.login.enabled = YES;
         if (!error) {
             [AutoHideHub showAutoHideHubInTop:@"登陆成功"];
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self dismissViewControllerAnimated:NO completion:nil];
         } else {
             NSLog(@"登陆失败,error:%@",error);
             [AutoHideHub showAutoHideHubInTop:@"用户名或密码错误"];
@@ -90,6 +90,7 @@
     
     RegisterController *registerController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"registerVC"];
     registerController.loginBlock = ^{
+//        [[UIApplication sharedApplication].delegate window].rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
         [self dismissViewControllerAnimated:YES completion:nil];
     };
     [self presentViewController:registerController animated:YES completion:nil];

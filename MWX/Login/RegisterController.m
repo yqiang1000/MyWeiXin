@@ -53,10 +53,15 @@
         self.registerButton.alpha = 1.0;
         if (!error) {
             NSLog(@"注册成功");
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+            
             [AutoHideHub showAutoHideHubInTop:@"注册成功"];
             if (self.loginBlock) {
                 self.loginBlock();
             }
+
             [self cancelAction:nil];
         } else {
             NSLog(@"注册失败,error:%@",error);

@@ -8,9 +8,10 @@
 
 #import "FirstViewController.h"
 #import "Common.h"
+#import <AVOSCloud.h>
 
 @interface FirstViewController ()
-
+@property (nonatomic, strong) NSMutableArray *array;
 @end
 
 @implementation FirstViewController
@@ -23,7 +24,45 @@
     [super viewDidLoad];
     [self setTitle:@"微信"];
     
+    AVUser *user = [AVUser user];
+
+    
+//    
+//    AVQuery *queue = [[AVQuery alloc] initWithClassName:@"_User"];
+//    self.array = [[NSMutableArray alloc] init];
+//    __weak typeof(self) wself = self;
+//    [queue findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        __strong typeof(self) sself = wself;
+//        
+//        if (!error) {
+//            sself.array = [objects mutableCopy];
+//            [sself save];
+//        } else {
+//            NSLog(@"%@",error);
+//        }
+//    }];
+    
 }
+
+
+//- (void)save {
+//    AVObject *firendList = [[AVObject alloc] initWithClassName:@"firendList"];
+//    [AVObject saveAllInBackground:_array block:^(BOOL succeeded, NSError *error) {
+//        if (error) {
+//            NSLog(@"失败:%@",error);
+//        } else {
+//            NSLog(@"成功");
+//            AVRelation *relation = [firendList relationforKey:@"friends"];
+//            
+//            [relation addObject:_array[12]];
+//            [relation addObject:_array[13]];
+//            [relation addObject:_array[14]];
+//            [relation addObject:_array[15]];
+//            [firendList saveInBackground];
+//        }
+//    }];
+//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
