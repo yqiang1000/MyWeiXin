@@ -14,6 +14,13 @@
 		B83C35121CEC00AB0054C471 /* libPods-MWX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350C1CEC00AB0054C471 /* libPods-MWX.a */; };
 		B83C35131CEC00AB0054C471 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */; };
 		B83C352C1CEC047C0054C471 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B83C352B1CEC047C0054C471 /* icon.png */; };
+		B83C35621CEC70270054C471 /* SetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35601CEC70270054C471 /* SetCell.m */; };
+		B83C35631CEC70270054C471 /* SetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83C35611CEC70270054C471 /* SetCell.xib */; };
+		B83C35661CEC703A0054C471 /* SetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35651CEC703A0054C471 /* SetTableView.m */; };
+		B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35681CEC705B0054C471 /* FourthViewController.m */; };
+		B83C35831CEC71D10054C471 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35811CEC71D10054C471 /* ListCell.m */; };
+		B83C35841CEC71D10054C471 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83C35821CEC71D10054C471 /* ListCell.xib */; };
+		B83C35871CEC71DC0054C471 /* ListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C35861CEC71DC0054C471 /* ListTableView.m */; };
 		B88993091CEAAE5D00E12523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993081CEAAE5D00E12523 /* main.m */; };
 		B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B889930B1CEAAE5D00E12523 /* AppDelegate.m */; };
 		B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88993101CEAAE5D00E12523 /* Main.storyboard */; };
@@ -22,7 +29,6 @@
 		B88993221CEAAE5D00E12523 /* MWXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993211CEAAE5D00E12523 /* MWXTests.m */; };
 		B889932D1CEAAE5D00E12523 /* MWXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B889932C1CEAAE5D00E12523 /* MWXUITests.m */; };
 		B88993541CEAB09000E12523 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993531CEAB09000E12523 /* FirstViewController.m */; };
-		B88993571CEAB0AA00E12523 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993561CEAB0AA00E12523 /* FourthViewController.m */; };
 		B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993591CEAB0CC00E12523 /* LoginTableViewController.m */; };
 		B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889935C1CEAB0DD00E12523 /* SecondViewController.m */; };
 		B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889935F1CEAB0EC00E12523 /* ThridViewController.m */; };
@@ -73,6 +79,18 @@
 		B83C350C1CEC00AB0054C471 /* libPods-MWX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MWX.a"; path = "Pods/../build/Debug-iphoneos/libPods-MWX.a"; sourceTree = "<group>"; };
 		B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
 		B83C352B1CEC047C0054C471 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B83C355F1CEC70270054C471 /* SetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetCell.h; path = MWX/Fourth/SetCell.h; sourceTree = SOURCE_ROOT; };
+		B83C35601CEC70270054C471 /* SetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetCell.m; path = MWX/Fourth/SetCell.m; sourceTree = SOURCE_ROOT; };
+		B83C35611CEC70270054C471 /* SetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetCell.xib; path = MWX/Fourth/SetCell.xib; sourceTree = SOURCE_ROOT; };
+		B83C35641CEC703A0054C471 /* SetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetTableView.h; path = MWX/Fourth/SetTableView.h; sourceTree = SOURCE_ROOT; };
+		B83C35651CEC703A0054C471 /* SetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SetTableView.m; path = MWX/Fourth/SetTableView.m; sourceTree = SOURCE_ROOT; };
+		B83C35671CEC705B0054C471 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		B83C35681CEC705B0054C471 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		B83C35801CEC71D10054C471 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCell.h; path = MWX/Second/ListCell.h; sourceTree = SOURCE_ROOT; };
+		B83C35811CEC71D10054C471 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = MWX/Second/ListCell.m; sourceTree = SOURCE_ROOT; };
+		B83C35821CEC71D10054C471 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCell.xib; path = MWX/Second/ListCell.xib; sourceTree = SOURCE_ROOT; };
+		B83C35851CEC71DC0054C471 /* ListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableView.h; path = MWX/Second/ListTableView.h; sourceTree = SOURCE_ROOT; };
+		B83C35861CEC71DC0054C471 /* ListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableView.m; path = MWX/Second/ListTableView.m; sourceTree = SOURCE_ROOT; };
 		B88993041CEAAE5D00E12523 /* MWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88993081CEAAE5D00E12523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B889930A1CEAAE5D00E12523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -89,8 +107,6 @@
 		B889932E1CEAAE5D00E12523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88993521CEAB09000E12523 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B88993531CEAB09000E12523 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B88993551CEAB0AA00E12523 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		B88993561CEAB0AA00E12523 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		B88993581CEAB0CC00E12523 /* LoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewController.h; sourceTree = "<group>"; };
 		B88993591CEAB0CC00E12523 /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
 		B889935B1CEAB0DD00E12523 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -264,8 +280,8 @@
 		B88993421CEAB07A00E12523 /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
-				B88993551CEAB0AA00E12523 /* FourthViewController.h */,
-				B88993561CEAB0AA00E12523 /* FourthViewController.m */,
+				B83C35671CEC705B0054C471 /* FourthViewController.h */,
+				B83C35681CEC705B0054C471 /* FourthViewController.m */,
 				B88993431CEAB07A00E12523 /* Model */,
 				B88993441CEAB07A00E12523 /* ModelView */,
 				B88993451CEAB07A00E12523 /* View */,
@@ -283,6 +299,9 @@
 		B88993441CEAB07A00E12523 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				B83C355F1CEC70270054C471 /* SetCell.h */,
+				B83C35601CEC70270054C471 /* SetCell.m */,
+				B83C35611CEC70270054C471 /* SetCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -290,6 +309,8 @@
 		B88993451CEAB07A00E12523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35641CEC703A0054C471 /* SetTableView.h */,
+				B83C35651CEC703A0054C471 /* SetTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +373,9 @@
 		B889934C1CEAB07A00E12523 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35801CEC71D10054C471 /* ListCell.h */,
+				B83C35811CEC71D10054C471 /* ListCell.m */,
+				B83C35821CEC71D10054C471 /* ListCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -359,6 +383,8 @@
 		B889934D1CEAB07A00E12523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35851CEC71DC0054C471 /* ListTableView.h */,
+				B83C35861CEC71DC0054C471 /* ListTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,8 +577,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83C352C1CEC047C0054C471 /* icon.png in Resources */,
+				B83C35841CEC71D10054C471 /* ListCell.xib in Resources */,
 				B88993171CEAAE5D00E12523 /* LaunchScreen.storyboard in Resources */,
 				B88993141CEAAE5D00E12523 /* Assets.xcassets in Resources */,
+				B83C35631CEC70270054C471 /* SetCell.xib in Resources */,
 				B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,17 +654,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83C35621CEC70270054C471 /* SetCell.m in Sources */,
 				B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */,
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
-				B88993571CEAB0AA00E12523 /* FourthViewController.m in Sources */,
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,
+				B83C35871CEC71DC0054C471 /* ListTableView.m in Sources */,
+				B83C35661CEC703A0054C471 /* SetTableView.m in Sources */,
 				B88993091CEAAE5D00E12523 /* main.m in Sources */,
 				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
+				B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */,
+				B83C35831CEC71D10054C471 /* ListCell.m in Sources */,
 				B88993541CEAB09000E12523 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

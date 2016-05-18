@@ -8,8 +8,11 @@
 
 #import "FourthViewController.h"
 #import "Common.h"
+#import "SetTableView.h"
 
 @interface FourthViewController ()
+
+@property (strong, nonatomic) SetTableView *tableView;
 
 @end
 
@@ -18,10 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-    button.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:button];
-    [button addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
+    self.tableView = [[SetTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
+    __weak typeof(self) weakSelf = self;
+    self.tableView.back = ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        [strongSelf action];
+        
+    };
 }
 
 
