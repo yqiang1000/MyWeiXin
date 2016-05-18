@@ -22,7 +22,17 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-q2-a7B">
-                        <rect key="frame" x="58" y="10" width="43" height="23"/>
+                        <rect key="frame" x="58" y="10" width="100" height="23"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="flh-mv-uPu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQO-C7-Jdw">
+                        <rect key="frame" x="178" y="10" width="122" height="23"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -31,15 +41,26 @@
                 </subviews>
                 <animations/>
                 <constraints>
+                    <constraint firstItem="nQO-C7-Jdw" firstAttribute="leading" secondItem="uCk-q2-a7B" secondAttribute="trailing" constant="20" id="EzO-iL-GAp"/>
                     <constraint firstItem="w0S-ak-7Bu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Mp9-eI-tUu"/>
+                    <constraint firstAttribute="bottom" secondItem="nQO-C7-Jdw" secondAttribute="bottom" constant="10" id="OTF-Va-c7K"/>
                     <constraint firstItem="uCk-q2-a7B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PqD-jy-qp4"/>
+                    <constraint firstItem="nQO-C7-Jdw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="X2p-fU-eIg"/>
                     <constraint firstAttribute="bottom" secondItem="w0S-ak-7Bu" secondAttribute="bottom" constant="5" id="cjm-IK-v8G"/>
                     <constraint firstAttribute="bottom" secondItem="uCk-q2-a7B" secondAttribute="bottom" constant="10" id="fYd-ce-1id"/>
                     <constraint firstItem="uCk-q2-a7B" firstAttribute="leading" secondItem="w0S-ak-7Bu" secondAttribute="trailing" constant="20" id="jsM-pD-vLM"/>
+                    <constraint firstAttribute="trailing" secondItem="nQO-C7-Jdw" secondAttribute="trailing" constant="20" id="qSr-6a-f6i"/>
                     <constraint firstItem="w0S-ak-7Bu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="u1a-7q-TsO"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="iconImage" destination="w0S-ak-7Bu" id="5X3-9e-wgs"/>
+                <outlet property="imageView" destination="w0S-ak-7Bu" id="BQV-SM-DzS"/>
+                <outlet property="mobile" destination="nQO-C7-Jdw" id="BB4-EV-GIO"/>
+                <outlet property="name" destination="uCk-q2-a7B" id="daa-FV-hER"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="325"/>
         </tableViewCell>
     </objects>
     <resources>

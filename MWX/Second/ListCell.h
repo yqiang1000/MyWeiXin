@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVOSCloud.h>
 
 @interface ListCell : UITableViewCell
+
+@property (strong, nonatomic) NSArray *array;
+@property (strong, nonatomic) AVObject *obj;
+@property (strong, nonatomic) NSString *assID;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *mobile;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImage;
 
 @end
