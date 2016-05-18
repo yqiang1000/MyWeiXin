@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Common.h"
 
 @interface SecondViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//    AVUser *user = [AVUser currentUser];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

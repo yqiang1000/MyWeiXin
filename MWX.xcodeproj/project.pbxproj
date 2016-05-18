@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10C23D3919F20C479527BF10 /* libPods-MWX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2C673E279F2A29E86B0726 /* libPods-MWX.a */; };
+		B83C350E1CEC00AB0054C471 /* libAVOSCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35081CEC00AB0054C471 /* libAVOSCloud.a */; };
+		B83C350F1CEC00AB0054C471 /* libAVOSCloudIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */; };
+		B83C35101CEC00AB0054C471 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350A1CEC00AB0054C471 /* libIQKeyboardManager.a */; };
+		B83C35111CEC00AB0054C471 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350B1CEC00AB0054C471 /* libMBProgressHUD.a */; };
+		B83C35121CEC00AB0054C471 /* libPods-MWX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350C1CEC00AB0054C471 /* libPods-MWX.a */; };
+		B83C35131CEC00AB0054C471 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */; };
+		B83C352C1CEC047C0054C471 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B83C352B1CEC047C0054C471 /* icon.png */; };
 		B88993091CEAAE5D00E12523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993081CEAAE5D00E12523 /* main.m */; };
 		B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B889930B1CEAAE5D00E12523 /* AppDelegate.m */; };
 		B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88993101CEAAE5D00E12523 /* Main.storyboard */; };
@@ -22,11 +28,6 @@
 		B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889935F1CEAB0EC00E12523 /* ThridViewController.m */; };
 		B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993651CEAB15100E12523 /* BaseNavigationController.m */; };
 		B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993771CEAB81D00E12523 /* BaseTabBarController.m */; };
-		B88993801CEAC50200E12523 /* libAVOSCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937C1CEAC50200E12523 /* libAVOSCloud.a */; };
-		B88993811CEAC50200E12523 /* libAVOSCloudIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937D1CEAC50200E12523 /* libAVOSCloudIM.a */; };
-		B88993821CEAC50200E12523 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937E1CEAC50200E12523 /* libIQKeyboardManager.a */; };
-		B88993831CEAC50200E12523 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889937F1CEAC50200E12523 /* libReactiveCocoa.a */; };
-		B88993871CEAC8F100E12523 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B88993861CEAC8F100E12523 /* icon.png */; };
 		B889938A1CEB049A00E12523 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993891CEB049A00E12523 /* RegisterController.m */; };
 		B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889938C1CEB07CB00E12523 /* BaseViewController.m */; };
 		B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993901CEB0A7300E12523 /* AutoHideHub.m */; };
@@ -53,6 +54,25 @@
 		2A2C673E279F2A29E86B0726 /* libPods-MWX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B78C392992F9A54949CA50D /* Pods-MWX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.debug.xcconfig"; sourceTree = "<group>"; };
 		B13466AEC02409271E5A7AA1 /* Pods-MWX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.release.xcconfig"; sourceTree = "<group>"; };
+		B83C34F01CEBFEA40054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
+		B83C34F11CEBFEA40054C471 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
+		B83C34F21CEBFEA40054C471 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		B83C34F31CEBFEA40054C471 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		B83C34F41CEBFEA40054C471 /* libPods-MWX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MWX.a"; path = "Pods/../build/Debug-iphoneos/libPods-MWX.a"; sourceTree = "<group>"; };
+		B83C34F51CEBFEA40054C471 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		B83C34FC1CEBFEB40054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
+		B83C34FD1CEBFEB40054C471 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
+		B83C34FE1CEBFEB40054C471 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		B83C34FF1CEBFEB40054C471 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		B83C35001CEBFEB40054C471 /* libPods-MWX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MWX.a"; path = "Pods/../build/Debug-iphoneos/libPods-MWX.a"; sourceTree = "<group>"; };
+		B83C35011CEBFEB40054C471 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		B83C35081CEC00AB0054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
+		B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
+		B83C350A1CEC00AB0054C471 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		B83C350B1CEC00AB0054C471 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		B83C350C1CEC00AB0054C471 /* libPods-MWX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MWX.a"; path = "Pods/../build/Debug-iphoneos/libPods-MWX.a"; sourceTree = "<group>"; };
+		B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
+		B83C352B1CEC047C0054C471 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B88993041CEAAE5D00E12523 /* MWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88993081CEAAE5D00E12523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B889930A1CEAAE5D00E12523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -86,7 +106,6 @@
 		B889937D1CEAC50200E12523 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
 		B889937E1CEAC50200E12523 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
 		B889937F1CEAC50200E12523 /* libReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReactiveCocoa.a; path = "Pods/../build/Debug-iphoneos/libReactiveCocoa.a"; sourceTree = "<group>"; };
-		B88993861CEAC8F100E12523 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B88993881CEB049A00E12523 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
 		B88993891CEB049A00E12523 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		B889938B1CEB07CB00E12523 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -100,11 +119,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88993801CEAC50200E12523 /* libAVOSCloud.a in Frameworks */,
-				B88993811CEAC50200E12523 /* libAVOSCloudIM.a in Frameworks */,
-				B88993821CEAC50200E12523 /* libIQKeyboardManager.a in Frameworks */,
-				B88993831CEAC50200E12523 /* libReactiveCocoa.a in Frameworks */,
-				10C23D3919F20C479527BF10 /* libPods-MWX.a in Frameworks */,
+				B83C350E1CEC00AB0054C471 /* libAVOSCloud.a in Frameworks */,
+				B83C350F1CEC00AB0054C471 /* libAVOSCloudIM.a in Frameworks */,
+				B83C35101CEC00AB0054C471 /* libIQKeyboardManager.a in Frameworks */,
+				B83C35111CEC00AB0054C471 /* libMBProgressHUD.a in Frameworks */,
+				B83C35121CEC00AB0054C471 /* libPods-MWX.a in Frameworks */,
+				B83C35131CEC00AB0054C471 /* libReactiveCocoa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +297,11 @@
 		B88993461CEAB07A00E12523 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B83C352B1CEC047C0054C471 /* icon.png */,
 				B88993581CEAB0CC00E12523 /* LoginTableViewController.h */,
 				B88993591CEAB0CC00E12523 /* LoginTableViewController.m */,
 				B88993881CEB049A00E12523 /* RegisterController.h */,
 				B88993891CEB049A00E12523 /* RegisterController.m */,
-				B88993861CEAC8F100E12523 /* icon.png */,
 				B88993471CEAB07A00E12523 /* Model */,
 				B88993481CEAB07A00E12523 /* ModelView */,
 				B88993491CEAB07A00E12523 /* View */,
@@ -397,6 +417,24 @@
 		D35354AD5566672C931BA828 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B83C35081CEC00AB0054C471 /* libAVOSCloud.a */,
+				B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */,
+				B83C350A1CEC00AB0054C471 /* libIQKeyboardManager.a */,
+				B83C350B1CEC00AB0054C471 /* libMBProgressHUD.a */,
+				B83C350C1CEC00AB0054C471 /* libPods-MWX.a */,
+				B83C350D1CEC00AB0054C471 /* libReactiveCocoa.a */,
+				B83C34FC1CEBFEB40054C471 /* libAVOSCloud.a */,
+				B83C34FD1CEBFEB40054C471 /* libAVOSCloudIM.a */,
+				B83C34FE1CEBFEB40054C471 /* libIQKeyboardManager.a */,
+				B83C34FF1CEBFEB40054C471 /* libMBProgressHUD.a */,
+				B83C35001CEBFEB40054C471 /* libPods-MWX.a */,
+				B83C35011CEBFEB40054C471 /* libReactiveCocoa.a */,
+				B83C34F01CEBFEA40054C471 /* libAVOSCloud.a */,
+				B83C34F11CEBFEA40054C471 /* libAVOSCloudIM.a */,
+				B83C34F21CEBFEA40054C471 /* libIQKeyboardManager.a */,
+				B83C34F31CEBFEA40054C471 /* libMBProgressHUD.a */,
+				B83C34F41CEBFEA40054C471 /* libPods-MWX.a */,
+				B83C34F51CEBFEA40054C471 /* libReactiveCocoa.a */,
 				B889937C1CEAC50200E12523 /* libAVOSCloud.a */,
 				B889937D1CEAC50200E12523 /* libAVOSCloudIM.a */,
 				B889937E1CEAC50200E12523 /* libIQKeyboardManager.a */,
@@ -512,8 +550,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83C352C1CEC047C0054C471 /* icon.png in Resources */,
 				B88993171CEAAE5D00E12523 /* LaunchScreen.storyboard in Resources */,
-				B88993871CEAC8F100E12523 /* icon.png in Resources */,
 				B88993141CEAAE5D00E12523 /* Assets.xcassets in Resources */,
 				B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */,
 			);
@@ -741,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MWX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -750,6 +789,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yqiang1000-163.MWX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -759,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MWX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -767,6 +808,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yqiang1000-163.MWX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

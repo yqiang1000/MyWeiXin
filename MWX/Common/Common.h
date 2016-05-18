@@ -8,7 +8,7 @@
 
 #ifndef Common_h
 #define Common_h
-#import <AVOSCloudIM.h>
+
 #import <AVOSCloud.h>
 #import "LoginTableViewController.h"
 
