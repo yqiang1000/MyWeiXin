@@ -8,6 +8,7 @@
 
 #import "ListTableView.h"
 #import "ListCell.h"
+#import <AVOSCloud.h>
 
 @implementation ListTableView
 
@@ -16,8 +17,26 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
+        [self loadData];
     }
     return self;
+}
+
+- (void)loadData {
+    
+    self.array = [[NSMutableArray alloc] init];
+    AVQuery *queue = [AVQuery queryWithClassName:@"List"];
+    [queue whereKey:@"assID" equalTo:[AVUser currentUser].objectId];
+    [queue findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"success");
+            _array = [objects mutableCopy];
+            [self reloadData];
+        } else {
+            NSLog(@"faile:%@",error);
+        }
+    }];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -25,13 +44,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return _array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCell"];
+    
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"ListCell" owner:self options:nil] lastObject];
+        cell.obj = _array[indexPath.row];
     }
     return cell;
 }

@@ -10,12 +10,21 @@
 
 @implementation ListCell
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        
+
+- (void)setObj:(AVObject *)obj {
+    if (_obj != obj) {
+        _obj = obj;
+        [self loadData];
     }
-    return self;
+
+}
+
+- (void)loadData {
+    NSDictionary *dic = [self.obj valueForKey:@"localData"];
+    self.name.text = dic[@"name"];
+    self.assID = dic[@"assID"];
+    self.mobile.text = dic[@"mobile"];
+    [self setNeedsDisplay];
 }
 
 - (void)awakeFromNib {

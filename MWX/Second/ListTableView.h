@@ -10,4 +10,6 @@
 
 @interface ListTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic, strong) NSMutableArray *array;
+
 @end
