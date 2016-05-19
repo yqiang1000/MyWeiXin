@@ -56,7 +56,6 @@
             <animations/>
             <connections>
                 <outlet property="iconImage" destination="w0S-ak-7Bu" id="5X3-9e-wgs"/>
-                <outlet property="imageView" destination="w0S-ak-7Bu" id="BQV-SM-DzS"/>
                 <outlet property="mobile" destination="nQO-C7-Jdw" id="BB4-EV-GIO"/>
                 <outlet property="name" destination="uCk-q2-a7B" id="daa-FV-hER"/>
             </connections>
