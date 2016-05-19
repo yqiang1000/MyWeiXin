@@ -24,7 +24,6 @@
     self.name.text = dic[@"name"];
     self.assID = dic[@"assID"];
     self.mobile.text = dic[@"mobile"];
-    [self setNeedsDisplay];
 }
 
 - (void)awakeFromNib {

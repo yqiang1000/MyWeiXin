@@ -17,21 +17,26 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
-        [self loadData];
+        self.array = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
 - (void)loadData {
     
-    self.array = [[NSMutableArray alloc] init];
+    
     AVQuery *queue = [AVQuery queryWithClassName:@"List"];
     [queue whereKey:@"assID" equalTo:[AVUser currentUser].objectId];
     [queue findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"success");
-            _array = [objects mutableCopy];
-            [self reloadData];
+            if ([_array isEqualToArray:objects]) {
+                return ;
+            } else {
+                
+                _array = [objects mutableCopy];
+                [self reloadData];
+            }
         } else {
             NSLog(@"faile:%@",error);
         }

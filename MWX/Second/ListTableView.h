@@ -11,5 +11,6 @@
 @interface ListTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *array;
+- (void)loadData;
 
 @end
