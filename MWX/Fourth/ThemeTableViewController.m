@@ -7,6 +7,7 @@
 //
 
 #import "ThemeTableViewController.h"
+#import "FourthViewController.h"
 #import "ThemeManager.h"
 
 @interface ThemeTableViewController ()

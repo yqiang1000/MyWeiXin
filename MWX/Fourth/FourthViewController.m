@@ -10,6 +10,7 @@
 #import "ThemeTableViewController.h"
 #import "Common.h"
 #import "SetTableView.h"
+#import "ThemeManager.h"
 
 @interface FourthViewController ()
 
@@ -36,6 +37,8 @@
     self.tableView.click = ^{
         [weakSelf jumpToController];
     };
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChange) name:kThemeChange object:nil];
 }
 
 
@@ -47,6 +50,16 @@
 - (void)jumpToController{
     ThemeTableViewController *theme = [[ThemeTableViewController alloc]init];
     [self.navigationController pushViewController:theme animated:YES];
+}
+
+-(void)themeChange {
+    ThemeManager *manager = [ThemeManager shareInstance];
+    
+    UIImage *image = [manager getThemeImage:@"bg_home.jpg"];
+    
+    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:image]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
