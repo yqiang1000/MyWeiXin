@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^Back)(void);
+typedef void (^Click)(void);
 
 @interface SetTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
 @property (copy, nonatomic) Back back;
+@property (nonatomic,strong)Click click;
 
 @end

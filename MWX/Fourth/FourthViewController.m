@@ -7,6 +7,7 @@
 //
 
 #import "FourthViewController.h"
+#import "ThemeTableViewController.h"
 #import "Common.h"
 #import "SetTableView.h"
 
@@ -31,12 +32,21 @@
         [strongSelf action];
         
     };
+    
+    self.tableView.click = ^{
+        [weakSelf jumpToController];
+    };
 }
 
 
 - (void)action {
     [AVUser logOut];
     [self userIsLogined];
+}
+
+- (void)jumpToController{
+    ThemeTableViewController *theme = [[ThemeTableViewController alloc]init];
+    [self.navigationController pushViewController:theme animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

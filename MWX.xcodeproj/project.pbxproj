@@ -37,6 +37,22 @@
 		B889938A1CEB049A00E12523 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993891CEB049A00E12523 /* RegisterController.m */; };
 		B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B889938C1CEB07CB00E12523 /* BaseViewController.m */; };
 		B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993901CEB0A7300E12523 /* AutoHideHub.m */; };
+		EE5E00581CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
+		EE5E00591CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
+		EE5E005A1CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
+		EE5E005B1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */; };
+		EE5E005C1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */; };
+		EE5E005D1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */; };
+		EE5E00631CEEEE7100FEDBCB /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00621CEEEE7100FEDBCB /* theme.plist */; };
+		EE5E00641CEEEE7100FEDBCB /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00621CEEEE7100FEDBCB /* theme.plist */; };
+		EE5E00651CEEEE7100FEDBCB /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00621CEEEE7100FEDBCB /* theme.plist */; };
+		EE5E00681CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00671CEEEEA600FEDBCB /* ThemeTableViewController.m */; };
+		EE5E00691CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00671CEEEEA600FEDBCB /* ThemeTableViewController.m */; };
+		EE5E006A1CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00671CEEEEA600FEDBCB /* ThemeTableViewController.m */; };
+		EE5E00771CEEF1F800FEDBCB /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */; };
+		EE5E00781CEEF1F800FEDBCB /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */; };
+		EE5E00791CEEF1F800FEDBCB /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */; };
+		EE5E00831CEF0BDB00FEDBCB /* Skins in Resources */ = {isa = PBXBuildFile; fileRef = EE5E00821CEF0BDB00FEDBCB /* Skins */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +144,15 @@
 		B889938C1CEB07CB00E12523 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		B889938F1CEB0A7300E12523 /* AutoHideHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoHideHub.h; sourceTree = "<group>"; };
 		B88993901CEB0A7300E12523 /* AutoHideHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoHideHub.m; sourceTree = "<group>"; };
+		EE5E00551CEEE8DE00FEDBCB /* ChangeThemeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeThemeViewCell.h; sourceTree = SOURCE_ROOT; };
+		EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeViewCell.m; sourceTree = SOURCE_ROOT; };
+		EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeThemeViewCell.xib; sourceTree = SOURCE_ROOT; };
+		EE5E00621CEEEE7100FEDBCB /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
+		EE5E00661CEEEEA600FEDBCB /* ThemeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeTableViewController.h; sourceTree = "<group>"; };
+		EE5E00671CEEEEA600FEDBCB /* ThemeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeTableViewController.m; sourceTree = "<group>"; };
+		EE5E00751CEEF1F800FEDBCB /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		EE5E00821CEF0BDB00FEDBCB /* Skins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Skins; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +229,7 @@
 		B88993071CEAAE5D00E12523 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE5E00821CEF0BDB00FEDBCB /* Skins */,
 				B88993081CEAAE5D00E12523 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -240,6 +266,8 @@
 				B889930A1CEAAE5D00E12523 /* AppDelegate.h */,
 				B889930B1CEAAE5D00E12523 /* AppDelegate.m */,
 				B88993101CEAAE5D00E12523 /* Main.storyboard */,
+				EE5E00751CEEF1F800FEDBCB /* ThemeManager.h */,
+				EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -282,6 +310,9 @@
 			children = (
 				B83C35671CEC705B0054C471 /* FourthViewController.h */,
 				B83C35681CEC705B0054C471 /* FourthViewController.m */,
+				EE5E00661CEEEEA600FEDBCB /* ThemeTableViewController.h */,
+				EE5E00671CEEEEA600FEDBCB /* ThemeTableViewController.m */,
+				EE5E00621CEEEE7100FEDBCB /* theme.plist */,
 				B88993431CEAB07A00E12523 /* Model */,
 				B88993441CEAB07A00E12523 /* ModelView */,
 				B88993451CEAB07A00E12523 /* View */,
@@ -302,6 +333,9 @@
 				B83C355F1CEC70270054C471 /* SetCell.h */,
 				B83C35601CEC70270054C471 /* SetCell.m */,
 				B83C35611CEC70270054C471 /* SetCell.xib */,
+				EE5E00551CEEE8DE00FEDBCB /* ChangeThemeViewCell.h */,
+				EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */,
+				EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -576,7 +610,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E00631CEEEE7100FEDBCB /* theme.plist in Resources */,
+				EE5E005B1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */,
 				B83C352C1CEC047C0054C471 /* icon.png in Resources */,
+				EE5E00831CEF0BDB00FEDBCB /* Skins in Resources */,
 				B83C35841CEC71D10054C471 /* ListCell.xib in Resources */,
 				B88993171CEAAE5D00E12523 /* LaunchScreen.storyboard in Resources */,
 				B88993141CEAAE5D00E12523 /* Assets.xcassets in Resources */,
@@ -589,6 +626,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E00641CEEEE7100FEDBCB /* theme.plist in Resources */,
+				EE5E005C1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +635,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E00651CEEEE7100FEDBCB /* theme.plist in Resources */,
+				EE5E005D1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,12 +700,15 @@
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
+				EE5E00681CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */,
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,
 				B83C35871CEC71DC0054C471 /* ListTableView.m in Sources */,
+				EE5E00581CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */,
 				B83C35661CEC703A0054C471 /* SetTableView.m in Sources */,
+				EE5E00771CEEF1F800FEDBCB /* ThemeManager.m in Sources */,
 				B88993091CEAAE5D00E12523 /* main.m in Sources */,
 				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
 				B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */,
@@ -677,7 +721,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E00591CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */,
 				B88993221CEAAE5D00E12523 /* MWXTests.m in Sources */,
+				EE5E00691CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */,
+				EE5E00781CEEF1F800FEDBCB /* ThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +732,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E005A1CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */,
 				B889932D1CEAAE5D00E12523 /* MWXUITests.m in Sources */,
+				EE5E006A1CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */,
+				EE5E00791CEEF1F800FEDBCB /* ThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
