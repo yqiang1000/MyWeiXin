@@ -11,19 +11,14 @@
 @implementation ListCell
 
 
-- (void)setObj:(AVObject *)obj {
-    if (_obj != obj) {
-        _obj = obj;
-        [self loadData];
+- (void)setModel:(FirendModel *)model {
+    if (_model != model) {
+        _model = model;
+        self.name.text = _model.name;
+        self.assID = _model.firendID;
+        self.mobile.text = _model.mobile;
     }
 
-}
-
-- (void)loadData {
-    NSDictionary *dic = [self.obj valueForKey:@"localData"];
-    self.name.text = dic[@"name"];
-    self.assID = dic[@"assID"];
-    self.mobile.text = dic[@"mobile"];
 }
 
 - (void)awakeFromNib {

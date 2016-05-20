@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B81FC9831CEEB2E7003DF197 /* FirendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC9821CEEB2E7003DF197 /* FirendModel.m */; };
+		B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B83284661CEDB09B003C8450 /* AVOSCloudManager.m */; };
 		B83C350E1CEC00AB0054C471 /* libAVOSCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35081CEC00AB0054C471 /* libAVOSCloud.a */; };
 		B83C350F1CEC00AB0054C471 /* libAVOSCloudIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */; };
 		B83C35101CEC00AB0054C471 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350A1CEC00AB0054C471 /* libIQKeyboardManager.a */; };
@@ -60,6 +62,10 @@
 		2A2C673E279F2A29E86B0726 /* libPods-MWX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B78C392992F9A54949CA50D /* Pods-MWX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.debug.xcconfig"; sourceTree = "<group>"; };
 		B13466AEC02409271E5A7AA1 /* Pods-MWX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.release.xcconfig"; sourceTree = "<group>"; };
+		B81FC9811CEEB2E7003DF197 /* FirendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirendModel.h; path = MWX/Second/FirendModel.h; sourceTree = SOURCE_ROOT; };
+		B81FC9821CEEB2E7003DF197 /* FirendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirendModel.m; path = MWX/Second/FirendModel.m; sourceTree = SOURCE_ROOT; };
+		B83284651CEDB09B003C8450 /* AVOSCloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOSCloudManager.h; sourceTree = "<group>"; };
+		B83284661CEDB09B003C8450 /* AVOSCloudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOSCloudManager.m; sourceTree = "<group>"; };
 		B83C34F01CEBFEA40054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
 		B83C34F11CEBFEA40054C471 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
 		B83C34F21CEBFEA40054C471 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
@@ -161,6 +167,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B83284641CEDAF00003C8450 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B83284651CEDB09B003C8450 /* AVOSCloudManager.h */,
+				B83284661CEDB09B003C8450 /* AVOSCloudManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		B88992FB1CEAAE5D00E12523 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +201,7 @@
 		B88993061CEAAE5D00E12523 /* MWX */ = {
 			isa = PBXGroup;
 			children = (
+				B83284641CEDAF00003C8450 /* Tool */,
 				B889938E1CEB0A7300E12523 /* AutoHideHub */,
 				B889933A1CEAB07A00E12523 /* Common */,
 				B889933E1CEAB07A00E12523 /* First */,
@@ -366,6 +382,8 @@
 		B889934B1CEAB07A00E12523 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B81FC9811CEEB2E7003DF197 /* FirendModel.h */,
+				B81FC9821CEEB2E7003DF197 /* FirendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -665,8 +683,10 @@
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,
 				B83C35871CEC71DC0054C471 /* ListTableView.m in Sources */,
 				B83C35661CEC703A0054C471 /* SetTableView.m in Sources */,
+				B81FC9831CEEB2E7003DF197 /* FirendModel.m in Sources */,
 				B88993091CEAAE5D00E12523 /* main.m in Sources */,
 				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
+				B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */,
 				B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */,
 				B83C35831CEC71D10054C471 /* ListCell.m in Sources */,
 				B88993541CEAB09000E12523 /* FirstViewController.m in Sources */,

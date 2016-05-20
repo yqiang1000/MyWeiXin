@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVOSCloud.h>
+#import "FirendModel.h"
 
 @interface ListCell : UITableViewCell
 
-@property (strong, nonatomic) NSArray *array;
-@property (strong, nonatomic) AVObject *obj;
+//@property (strong, nonatomic) NSArray *array;
+@property (strong, nonatomic) FirendModel *model;
 @property (strong, nonatomic) NSString *assID;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *mobile;
