@@ -23,14 +23,20 @@
     [super viewDidLoad];
     self.title = @"通讯录";
     
-    self.tableView = [[ListTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    [self.view addSubview:_tableView];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 38, 38)];
+    [button addTarget:self action:@selector(menuAction:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"编辑" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    UIBarButtonItem *menu = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = menu;
+
 
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     if (self.tableView == nil) {
         self.tableView = [[ListTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        [self.view addSubview:self.tableView];
     }
     [self.tableView loadData];
 }

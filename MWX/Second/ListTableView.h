@@ -10,7 +10,7 @@
 
 @interface ListTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray *array;
+@property (nonatomic, strong) NSArray *array;
 - (void)loadData;
 
 @end

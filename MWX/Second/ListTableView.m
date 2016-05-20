@@ -8,7 +8,7 @@
 
 #import "ListTableView.h"
 #import "ListCell.h"
-#import <AVOSCloud.h>
+#import "AVOSCloudManager.h"
 
 @implementation ListTableView
 
@@ -17,31 +17,23 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
-        self.array = [[NSMutableArray alloc] init];
+        self.array = [[NSArray alloc] init];
     }
     return self;
 }
 
 - (void)loadData {
-    
-    
-    AVQuery *queue = [AVQuery queryWithClassName:@"List"];
-    [queue whereKey:@"assID" equalTo:[AVUser currentUser].objectId];
-    [queue findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    AVOSCloudManager *manager = [AVOSCloudManager defaultManager];
+    [manager getAllFirends:^(NSArray *array, NSError *error) {
+        
         if (!error) {
-            NSLog(@"success");
-            if ([_array isEqualToArray:objects]) {
-                return ;
-            } else {
-                
-                _array = [objects mutableCopy];
-                [self reloadData];
-            }
+            self.array = [array copy];
+            [self reloadData];
         } else {
-            NSLog(@"faile:%@",error);
+            NSLog(@"查找好友列表失败:%@",error);
         }
+        
     }];
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -57,7 +49,7 @@
     
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"ListCell" owner:self options:nil] lastObject];
-        cell.obj = _array[indexPath.row];
+        cell.model = _array[indexPath.row];
     }
     return cell;
 }

@@ -90,7 +90,6 @@
     NSString *imagePath = [path stringByAppendingPathComponent:imageName];
     //03 获取图片并返回
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
-    NSLog(@"####%@,^^^^%@",imagePath,image);
     return image;
     
 }
