@@ -11,6 +11,10 @@
 		B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC98A1CEEFB52003DF197 /* SearchViewController.m */; };
 		B81FC98D1CEEFB52003DF197 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */; };
 		B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B83284661CEDB09B003C8450 /* AVOSCloudManager.m */; };
+		B83BB19F1CF2E821008DE9E9 /* ChatTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83BB19E1CF2E821008DE9E9 /* ChatTableView.m */; };
+		B83BB1A31CF2EF67008DE9E9 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83BB1A11CF2EF67008DE9E9 /* ChatCell.m */; };
+		B83BB1A41CF2EF67008DE9E9 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83BB1A21CF2EF67008DE9E9 /* ChatCell.xib */; };
+		B83BB1AD1CF2F8F5008DE9E9 /* UIView+UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83BB1AC1CF2F8F5008DE9E9 /* UIView+UIViewController.m */; };
 		B83C350E1CEC00AB0054C471 /* libAVOSCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35081CEC00AB0054C471 /* libAVOSCloud.a */; };
 		B83C350F1CEC00AB0054C471 /* libAVOSCloudIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */; };
 		B83C35101CEC00AB0054C471 /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C350A1CEC00AB0054C471 /* libIQKeyboardManager.a */; };
@@ -90,6 +94,13 @@
 		B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		B83284651CEDB09B003C8450 /* AVOSCloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOSCloudManager.h; sourceTree = "<group>"; };
 		B83284661CEDB09B003C8450 /* AVOSCloudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOSCloudManager.m; sourceTree = "<group>"; };
+		B83BB19D1CF2E821008DE9E9 /* ChatTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatTableView.h; path = MWX/First/ChatTableView.h; sourceTree = SOURCE_ROOT; };
+		B83BB19E1CF2E821008DE9E9 /* ChatTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatTableView.m; path = MWX/First/ChatTableView.m; sourceTree = SOURCE_ROOT; };
+		B83BB1A01CF2EF67008DE9E9 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatCell.h; path = MWX/First/ChatCell.h; sourceTree = SOURCE_ROOT; };
+		B83BB1A11CF2EF67008DE9E9 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatCell.m; path = MWX/First/ChatCell.m; sourceTree = SOURCE_ROOT; };
+		B83BB1A21CF2EF67008DE9E9 /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatCell.xib; path = MWX/First/ChatCell.xib; sourceTree = SOURCE_ROOT; };
+		B83BB1AB1CF2F8F5008DE9E9 /* UIView+UIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIViewController.h"; sourceTree = "<group>"; };
+		B83BB1AC1CF2F8F5008DE9E9 /* UIView+UIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIViewController.m"; sourceTree = "<group>"; };
 		B83C34F01CEBFEA40054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
 		B83C34F11CEBFEA40054C471 /* libAVOSCloudIM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloudIM.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloudIM.a"; sourceTree = "<group>"; };
 		B83C34F21CEBFEA40054C471 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
@@ -297,6 +308,8 @@
 				B88993101CEAAE5D00E12523 /* Main.storyboard */,
 				EE5E00751CEEF1F800FEDBCB /* ThemeManager.h */,
 				EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */,
+				B83BB1AB1CF2F8F5008DE9E9 /* UIView+UIViewController.h */,
+				B83BB1AC1CF2F8F5008DE9E9 /* UIView+UIViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -323,6 +336,9 @@
 		B88993401CEAB07A00E12523 /* ModelView */ = {
 			isa = PBXGroup;
 			children = (
+				B83BB1A01CF2EF67008DE9E9 /* ChatCell.h */,
+				B83BB1A11CF2EF67008DE9E9 /* ChatCell.m */,
+				B83BB1A21CF2EF67008DE9E9 /* ChatCell.xib */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -330,6 +346,8 @@
 		B88993411CEAB07A00E12523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B83BB19D1CF2E821008DE9E9 /* ChatTableView.h */,
+				B83BB19E1CF2E821008DE9E9 /* ChatTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -650,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5E00631CEEEE7100FEDBCB /* theme.plist in Resources */,
+				B83BB1A41CF2EF67008DE9E9 /* ChatCell.xib in Resources */,
 				EE5E005B1CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib in Resources */,
 				B83C352C1CEC047C0054C471 /* icon.png in Resources */,
 				EE5E00831CEF0BDB00FEDBCB /* Skins in Resources */,
@@ -736,6 +755,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83BB1AD1CF2F8F5008DE9E9 /* UIView+UIViewController.m in Sources */,
 				B83C35621CEC70270054C471 /* SetCell.m in Sources */,
 				B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */,
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
@@ -745,6 +765,7 @@
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
+				B83BB19F1CF2E821008DE9E9 /* ChatTableView.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,
 				B83C35871CEC71DC0054C471 /* ListTableView.m in Sources */,
@@ -760,6 +781,7 @@
 				B83C672E1CF2AD1200E8956B /* SearchCell.m in Sources */,
 				B83C35831CEC71D10054C471 /* ListCell.m in Sources */,
 				B88993541CEAB09000E12523 /* FirstViewController.m in Sources */,
+				B83BB1A31CF2EF67008DE9E9 /* ChatCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
