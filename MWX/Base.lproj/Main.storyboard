@@ -47,7 +47,7 @@
         <!--First View Controller-->
         <scene sceneID="mxH-14-tiz">
             <objects>
-                <viewController id="9PH-nU-9So" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstVC" id="9PH-nU-9So" customClass="FirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D7G-B0-UwX"/>
                         <viewControllerLayoutGuide type="bottom" id="o4N-Zx-lwd"/>
@@ -63,6 +63,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMq-HU-JCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-865" y="-37"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="nJY-aA-Qrr">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" id="4XT-MX-rC1" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MzC-dC-9hJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="i9c-ss-1qb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ea-WV-ML9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cs-rm-Pwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865" y="591"/>
         </scene>
         <!--Item-->
         <scene sceneID="wCc-Hn-4hz">
