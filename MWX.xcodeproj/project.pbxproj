@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B81FC9831CEEB2E7003DF197 /* FirendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC9821CEEB2E7003DF197 /* FirendModel.m */; };
+		B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC98A1CEEFB52003DF197 /* SearchViewController.m */; };
+		B81FC98D1CEEFB52003DF197 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */; };
 		B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B83284661CEDB09B003C8450 /* AVOSCloudManager.m */; };
 		B83C350E1CEC00AB0054C471 /* libAVOSCloud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35081CEC00AB0054C471 /* libAVOSCloud.a */; };
 		B83C350F1CEC00AB0054C471 /* libAVOSCloudIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C35091CEC00AB0054C471 /* libAVOSCloudIM.a */; };
@@ -64,6 +66,9 @@
 		B13466AEC02409271E5A7AA1 /* Pods-MWX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.release.xcconfig"; sourceTree = "<group>"; };
 		B81FC9811CEEB2E7003DF197 /* FirendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirendModel.h; path = MWX/Second/FirendModel.h; sourceTree = SOURCE_ROOT; };
 		B81FC9821CEEB2E7003DF197 /* FirendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirendModel.m; path = MWX/Second/FirendModel.m; sourceTree = SOURCE_ROOT; };
+		B81FC9891CEEFB52003DF197 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B81FC98A1CEEFB52003DF197 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		B83284651CEDB09B003C8450 /* AVOSCloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOSCloudManager.h; sourceTree = "<group>"; };
 		B83284661CEDB09B003C8450 /* AVOSCloudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOSCloudManager.m; sourceTree = "<group>"; };
 		B83C34F01CEBFEA40054C471 /* libAVOSCloud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAVOSCloud.a; path = "Pods/../build/Debug-iphoneos/libAVOSCloud.a"; sourceTree = "<group>"; };
@@ -372,6 +377,9 @@
 			children = (
 				B889935B1CEAB0DD00E12523 /* SecondViewController.h */,
 				B889935C1CEAB0DD00E12523 /* SecondViewController.m */,
+				B81FC9891CEEFB52003DF197 /* SearchViewController.h */,
+				B81FC98A1CEEFB52003DF197 /* SearchViewController.m */,
+				B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */,
 				B889934B1CEAB07A00E12523 /* Model */,
 				B889934C1CEAB07A00E12523 /* ModelView */,
 				B889934D1CEAB07A00E12523 /* View */,
@@ -600,6 +608,7 @@
 				B88993141CEAAE5D00E12523 /* Assets.xcassets in Resources */,
 				B83C35631CEC70270054C471 /* SetCell.xib in Resources */,
 				B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */,
+				B81FC98D1CEEFB52003DF197 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +687,7 @@
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
+				B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,
 				B889935D1CEAB0DD00E12523 /* SecondViewController.m in Sources */,
 				B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */,

@@ -32,6 +32,6 @@ typedef void(^ExistBlock)(NSInteger *code,NSError *error);
 //判断好友是否已存在
 - (void)nameIsExist:(NSString *)name result:(ExistBlock)block;
 
-
+- (void)searchPerson:(NSString *)name;
 
 @end

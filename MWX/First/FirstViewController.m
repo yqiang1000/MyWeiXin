@@ -28,7 +28,7 @@
     [super viewDidLoad];
     [self setTitle:@"微信"];
     
-    [self addfirend:@"123"];
+//    [self addfirend:@"123"];
 
 }
 
