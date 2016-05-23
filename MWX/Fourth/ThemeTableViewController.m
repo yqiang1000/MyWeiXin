@@ -80,6 +80,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *theme = _themeArr[indexPath.row];
     [[ThemeManager shareInstance]setThemeName:theme];
+    [self.navigationController popViewControllerAnimated:YES];
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
