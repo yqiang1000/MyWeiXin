@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AVOSCloudManager.h"
 
 @interface FirendModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *firendID;
 @property (strong, nonatomic) NSString *mobile;
+
+- (instancetype)initWith:(AVUser *)user;
 
 @end

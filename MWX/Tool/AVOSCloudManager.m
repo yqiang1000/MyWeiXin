@@ -21,7 +21,7 @@
 }
 
 
-- (void)addFriend:(NSString *)name {
+- (void)addFirend:(NSString *)name {
     
     //对已经存在的用户进行添加
     AVUser *currentUser = [AVUser currentUser];
@@ -70,12 +70,7 @@
         _firendList = [[NSMutableArray alloc] init];
         
         for (AVUser *firend in objects) {
-            FirendModel *model = [[FirendModel alloc] init];
-            
-            model.firendID = firend.objectId;
-            model.name = firend.username;
-            model.mobile = firend.mobilePhoneNumber;
-            
+            FirendModel *model = [[FirendModel alloc] initWith:firend];
             [_firendList addObject:model];
         }
         
@@ -107,9 +102,27 @@
 }
 
 
-//- (void)searchPerson:(NSString *)name {
-//    avo
-//}
+- (void)searchPerson:(NSString *)name searchResult:(SearchBlock)block {
+    
+    NSMutableArray *resultList = [[NSMutableArray alloc] init];
+    NSString *sql = [NSString stringWithFormat:@"select * from %@ where username like '%%%@%%'",@"_User",name];
+    [AVQuery doCloudQueryInBackgroundWithCQL:sql callback:^(AVCloudQueryResult *result, NSError *error) {
+        
+        if (error) {
+            NSLog(@"查询失败");
+        } else {
+            
+            for (AVUser *firend in result.results) {
+                FirendModel *model = [[FirendModel alloc] initWith:firend];
+                [resultList addObject:model];
+            }
+        }
+        if (block) {
+            block(resultList, error);
+        }
+    }];
+                      
+}
 
 @end
 

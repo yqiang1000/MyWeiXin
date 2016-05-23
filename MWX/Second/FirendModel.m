@@ -10,4 +10,17 @@
 
 @implementation FirendModel
 
+- (instancetype)initWith:(AVUser *)user {
+    self = [super init];
+    if (self) {
+        if (user != nil) {
+            self.name = user.username;
+            self.firendID = user.objectId;
+            self.mobile = user.mobilePhoneNumber;
+        }
+        return self;
+    }
+    return nil;
+}
+
 @end

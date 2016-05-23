@@ -43,7 +43,7 @@
                 
             } else {
                 NSLog(@"正在添加。。。");
-                [manager addFriend:name];
+                [manager addFirend:name];
             }
         } else {
             NSLog(@"出错了:%@",error);

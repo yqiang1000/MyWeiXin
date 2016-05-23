@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchViewController : UIViewController
+
+
 - (IBAction)cancelAction:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *searchText;
 

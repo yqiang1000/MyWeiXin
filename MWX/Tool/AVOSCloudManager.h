@@ -12,7 +12,7 @@
 
 typedef void(^FirendBlock)(NSArray *array,NSError *error);
 typedef void(^ExistBlock)(NSInteger *code,NSError *error);
-
+typedef void(^SearchBlock)(NSArray *array,NSError *error);
 @interface AVOSCloudManager : NSObject
 
 
@@ -24,7 +24,7 @@ typedef void(^ExistBlock)(NSInteger *code,NSError *error);
 + (AVOSCloudManager *)defaultManager;
 
 //添加好友 >>>> 需要判断是否已存在
-- (void)addFriend:(NSString *)name;
+- (void)addFirend:(NSString *)name;
 
 //获取好友列表
 - (void)getAllFirends:(FirendBlock)block;
@@ -32,6 +32,6 @@ typedef void(^ExistBlock)(NSInteger *code,NSError *error);
 //判断好友是否已存在
 - (void)nameIsExist:(NSString *)name result:(ExistBlock)block;
 
-- (void)searchPerson:(NSString *)name;
+- (void)searchPerson:(NSString *)name searchResult:(SearchBlock)block;
 
 @end
