@@ -7,7 +7,7 @@
 //
 
 #import "ChatViewController.h"
-@class FirstViewController;
+#import "FirstViewController.h"
 
 @implementation ChatViewController
 
@@ -17,7 +17,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 38, 38)];
     [button addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:@"返回" forState:UIControlStateNormal];
@@ -28,9 +28,11 @@
 }
 
 - (void)backAction:(UIButton *)button {
-    FirstViewController *firstVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"firstVC"];
     
-    [self.navigationController popToViewController:firstVC animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+    self.tabBarController.selectedIndex = 0;
+    
 }
 
 @end

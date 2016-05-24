@@ -9,6 +9,7 @@
 #import "ChatTableView.h"
 #import "ChatCell.h"
 #import "UIView+UIViewController.h"
+#import "ChatViewController.h"
 
 @implementation ChatTableView
 
@@ -42,7 +43,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.viewController.navigationController pushViewController:[[UIViewController alloc] init] animated:YES];
+    ChatViewController *chatVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ChatVC"];
+    [self.viewController.navigationController pushViewController:chatVC animated:YES];
 }
 
 @end

@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTitle:@"发现"];
+//    self.view.backgroundColor = [UIColor redColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
