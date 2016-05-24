@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
-- (void)userIsLogined;
+- (BOOL)userIsLogined;
 @end
