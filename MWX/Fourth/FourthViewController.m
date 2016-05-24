@@ -38,7 +38,6 @@
         [weakSelf jumpToController];
     };
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChange) name:kThemeChange object:nil];
 }
 
 
@@ -52,15 +51,6 @@
     [self.navigationController pushViewController:theme animated:YES];
 }
 
--(void)themeChange {
-    ThemeManager *manager = [ThemeManager shareInstance];
-    
-    UIImage *image = [manager getThemeImage:@"bg_home.jpg"];
-    
-    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:image]];
-    
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
