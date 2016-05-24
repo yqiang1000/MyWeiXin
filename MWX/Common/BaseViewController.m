@@ -9,6 +9,8 @@
 #import "BaseViewController.h"
 #import "Common.h"
 #import "AutoHideHub.h"
+#import "ThemeManager.h"
+#import "ListTableView.h"
 
 @interface BaseViewController ()
 
@@ -23,7 +25,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChange) name:kThemeChange object:nil];
+    
 }
+
+-(void)themeChange {
+    ThemeManager *manager = [ThemeManager shareInstance];
+    
+    UIImage *image = [manager getThemeImage:@"bg_home.jpg"];
+    
+    for (ListTableView *tableview in self.view.subviews) {
+        
+        tableview.backgroundColor = [UIColor colorWithPatternImage:image];
+    }
+    
+    
+    
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
