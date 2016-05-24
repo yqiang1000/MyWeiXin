@@ -11,9 +11,9 @@
 
 @interface FirendModel : NSObject
 
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *firendID;
-@property (strong, nonatomic) NSString *mobile;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *firendID;
+@property (nonatomic, copy) NSString *mobile;
 
 - (instancetype)initWith:(AVUser *)user;
 

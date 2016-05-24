@@ -9,10 +9,11 @@
 #import "FirstViewController.h"
 #import "Common.h"
 #import "AVOSCloudManager.h"
-#import <AVIMClient.h>
-#import <AVIMConversation.h>
-#import <AVIMTextMessage.h>
+//#import <AVIMClient.h>
+//#import <AVIMConversation.h>
+//#import <AVIMTextMessage.h>
 #import "ChatTableView.h"
+#import <AVOSCloudIM.h>
 
 @interface FirstViewController ()<AVIMClientDelegate>
 
@@ -33,27 +34,47 @@
     }
     [self.tableView reloadData];
     
+
+//    self.client = [AVIMClient defaultClient];
+//    _client.delegate = self;
+//    [self.client openWithClientId:@"yeqiang" callback:^(BOOL succeeded, NSError *error) {
+//        AVIMConversationQuery *query = [self.client conversationQuery];
+//        [query findConversationsWithCallback:^(NSArray *objects, NSError *error) {
+//            if (!error) {
+//                NSLog(@"添加成功");
+//                NSLog(@"%@",objects);
+//                AVIMConversation *conversation = [objects firstObject];
+////                conversation.creator;
+//            } else {
+//                NSLog(@"添加失败:%@",error);
+//            }
+//        }];
+//    }];
+//    
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"微信"];
     
-//    [self sendToPengxiuxiu];
-    [self receiveMessage];
+    [self sendToPengxiuxiu:@"pengxiuxiu"];
+//    [self receiveMessage];
 
 }
 
 
-- (void)sendToPengxiuxiu {
-    self.client = [[AVIMClient alloc] init];
-    [self.client openWithClientId:@"yeqiang" callback:^(BOOL succeeded, NSError *error) {
-        [self.client createConversationWithName:@"maoAndmouse" clientIds:@[@"xiuxiu"] callback:^(AVIMConversation *conversation, NSError *error) {
-            [conversation sendMessage:[AVIMTextMessage messageWithText:@"hello" attributes:nil] callback:^(BOOL succeeded, NSError *error) {
+- (void)sendToPengxiuxiu:(NSString *)name  {
+
+    self.client = [AVIMClient defaultClient];
+    AVUser *currentUser = [AVUser currentUser];
+    [self.client openWithClientId:currentUser.username callback:^(BOOL succeeded, NSError *error) {
+        [self.client createConversationWithName:name clientIds:@[name] callback:^(AVIMConversation *conversation, NSError *error) {
+            [conversation sendMessage:[AVIMTextMessage messageWithText:@"nice to meet you" attributes:nil] callback:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {
-                    NSLog(@"fasongchenggong");
+                    NSLog(@"发送成功");
                 } else {
-                    NSLog(@"fasongshibai:%@",error);
+                    NSLog(@"发送失败:%@",error);
                 }
             }];
         }];
@@ -63,9 +84,9 @@
 
 
 - (void)receiveMessage {
-    self.client = [[AVIMClient alloc] init];
+    self.client = [AVIMClient defaultClient];
     _client.delegate = self;
-    [_client openWithClientId:@"xiuxiu" callback:^(BOOL succeeded, NSError *error) {
+    [_client openWithClientId:[AVUser currentUser].username callback:^(BOOL succeeded, NSError *error) {
         
     }];
 }

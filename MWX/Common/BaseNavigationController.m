@@ -7,6 +7,7 @@
 //
 
 #import "BaseNavigationController.h"
+#import "UINavigationBar+Awesome.h"
 
 @interface BaseNavigationController ()
 
@@ -19,7 +20,7 @@
     
     self.navigationBar.titleTextAttributes =@{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:20 weight:2],
                                               };
-    
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor colorWithRed:44.0/255.0 green:151.0/255.0 blue:235.0/255.0 alpha:1.0]];
 }
 
 

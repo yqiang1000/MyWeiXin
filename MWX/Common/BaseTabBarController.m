@@ -52,7 +52,7 @@
 
 
 - (void)barButtonSelectd:(UIButton *)button {
-    NSInteger tag = button.tag;
+    self.selectedIndex = button.tag;
     
 }
 
