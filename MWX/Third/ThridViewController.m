@@ -29,11 +29,11 @@
 - (void)getMsg{
     NSLog(@"66");
     self.client = [[AVIMClient alloc]init];
-    [self.client openWithClientId:@"yeqiang" callback:^(BOOL succeeded, NSError *error) {
+    [self.client openWithClientId:@"pengxiuxiu" callback:^(BOOL succeeded, NSError *error) {
         NSLog(@"^^^^%@",self.client);
         AVIMConversationQuery *query = [self.client conversationQuery];
         NSLog(@"&&&&&%@",query);
-        [query getConversationById:@"573d74d7df0eea005e851893" callback:^(AVIMConversation *conversation, NSError *error) {
+        [query getConversationById:@"573d74d71ea49300645de961" callback:^(AVIMConversation *conversation, NSError *error) {
             NSLog(@"*****%@",conversation);
             [conversation queryMessagesWithLimit:5 callback:^(NSArray *objects, NSError *error) {
                 NSLog(@"----%@",objects);
