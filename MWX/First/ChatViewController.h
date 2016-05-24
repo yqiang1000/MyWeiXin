@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "FirendModel.h"
+#import "TalkTableView.h"
 
 @interface ChatViewController : UIViewController
 
 @property (nonatomic, strong) FirendModel *model;
+@property (nonatomic, strong) TalkTableView *tableView;
 
 @end
