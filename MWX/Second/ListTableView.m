@@ -59,6 +59,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ChatViewController *chatVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ChatVC"];
     chatVC.model = _array[indexPath.row];
+    [self.viewController.tabBarController.tabBar setHidden:YES];
     [self.viewController.navigationController pushViewController:chatVC animated:YES];
 }
 

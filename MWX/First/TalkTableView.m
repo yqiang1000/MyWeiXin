@@ -8,7 +8,6 @@
 
 #import "TalkTableView.h"
 #import "TalkCell.h"
-#import "MessageModel.h"
 
 @implementation TalkTableView
 
@@ -44,6 +43,10 @@
 //        }
     }
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
 }
 
 

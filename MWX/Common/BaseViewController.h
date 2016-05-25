@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVIMClient.h>
 
 @interface BaseViewController : UIViewController
+
+@property (strong, nonatomic) AVIMClient *client;
 - (BOOL)userIsLogined;
+
 @end

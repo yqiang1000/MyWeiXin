@@ -52,8 +52,10 @@
 		B8950B7F1CF3F9E700063127 /* TalkTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B7E1CF3F9E700063127 /* TalkTableView.m */; };
 		B8950B821CF3FA1700063127 /* TalkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B811CF3FA1700063127 /* TalkCell.m */; };
 		B8950B841CF3FA4900063127 /* TalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8950B831CF3FA4900063127 /* TalkCell.xib */; };
-		B8950B871CF3FE3300063127 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B861CF3FE3300063127 /* MessageModel.m */; };
 		B8950B8D1CF409A100063127 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B8B1CF409A100063127 /* UINavigationBar+Awesome.m */; };
+		B8950B901CF4473A00063127 /* ConverSationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B8F1CF4473A00063127 /* ConverSationModel.m */; };
+		B8950B931CF447F700063127 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B911CF447F700063127 /* BaseModel.m */; };
+		B8950B961CF45E6500063127 /* ConversationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8950B951CF45E6500063127 /* ConversationManager.m */; };
 		EE5E00581CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
 		EE5E00591CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
 		EE5E005A1CEEE8DE00FEDBCB /* ChangeThemeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */; };
@@ -187,10 +189,14 @@
 		B8950B801CF3FA1600063127 /* TalkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TalkCell.h; path = MWX/First/TalkCell.h; sourceTree = SOURCE_ROOT; };
 		B8950B811CF3FA1700063127 /* TalkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TalkCell.m; path = MWX/First/TalkCell.m; sourceTree = SOURCE_ROOT; };
 		B8950B831CF3FA4900063127 /* TalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TalkCell.xib; path = MWX/First/TalkCell.xib; sourceTree = SOURCE_ROOT; };
-		B8950B851CF3FE3300063127 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageModel.h; path = MWX/First/MessageModel.h; sourceTree = SOURCE_ROOT; };
-		B8950B861CF3FE3300063127 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageModel.m; path = MWX/First/MessageModel.m; sourceTree = SOURCE_ROOT; };
 		B8950B8B1CF409A100063127 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		B8950B8C1CF409A100063127 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		B8950B8E1CF4473A00063127 /* ConverSationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConverSationModel.h; path = MWX/First/ConverSationModel.h; sourceTree = SOURCE_ROOT; };
+		B8950B8F1CF4473A00063127 /* ConverSationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConverSationModel.m; path = MWX/First/ConverSationModel.m; sourceTree = SOURCE_ROOT; };
+		B8950B911CF447F700063127 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		B8950B921CF447F700063127 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		B8950B941CF45E6500063127 /* ConversationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationManager.h; sourceTree = "<group>"; };
+		B8950B951CF45E6500063127 /* ConversationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationManager.m; sourceTree = "<group>"; };
 		EE5E00551CEEE8DE00FEDBCB /* ChangeThemeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeThemeViewCell.h; sourceTree = SOURCE_ROOT; };
 		EE5E00561CEEE8DE00FEDBCB /* ChangeThemeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeViewCell.m; sourceTree = SOURCE_ROOT; };
 		EE5E00571CEEE8DE00FEDBCB /* ChangeThemeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeThemeViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -236,8 +242,12 @@
 		B83284641CEDAF00003C8450 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B8950B911CF447F700063127 /* BaseModel.m */,
+				B8950B921CF447F700063127 /* BaseModel.h */,
 				B83284651CEDB09B003C8450 /* AVOSCloudManager.h */,
 				B83284661CEDB09B003C8450 /* AVOSCloudManager.m */,
+				B8950B941CF45E6500063127 /* ConversationManager.h */,
+				B8950B951CF45E6500063127 /* ConversationManager.m */,
 				B8950B8B1CF409A100063127 /* UINavigationBar+Awesome.m */,
 				B8950B8C1CF409A100063127 /* UINavigationBar+Awesome.h */,
 			);
@@ -350,8 +360,8 @@
 		B889933F1CEAB07A00E12523 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B8950B851CF3FE3300063127 /* MessageModel.h */,
-				B8950B861CF3FE3300063127 /* MessageModel.m */,
+				B8950B8E1CF4473A00063127 /* ConverSationModel.h */,
+				B8950B8F1CF4473A00063127 /* ConverSationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -787,6 +797,7 @@
 				B83BB1AD1CF2F8F5008DE9E9 /* UIView+UIViewController.m in Sources */,
 				B83C35621CEC70270054C471 /* SetCell.m in Sources */,
 				B889935A1CEAB0CC00E12523 /* LoginTableViewController.m in Sources */,
+				B8950B931CF447F700063127 /* BaseModel.m in Sources */,
 				B88993601CEAB0EC00E12523 /* ThridViewController.m in Sources */,
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
@@ -809,10 +820,11 @@
 				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
 				B83C672A1CF2AAC100E8956B /* SearchTableView.m in Sources */,
 				B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */,
-				B8950B871CF3FE3300063127 /* MessageModel.m in Sources */,
 				B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */,
+				B8950B901CF4473A00063127 /* ConverSationModel.m in Sources */,
 				B83C672E1CF2AD1200E8956B /* SearchCell.m in Sources */,
 				B83C35831CEC71D10054C471 /* ListCell.m in Sources */,
+				B8950B961CF45E6500063127 /* ConversationManager.m in Sources */,
 				B88993541CEAB09000E12523 /* FirstViewController.m in Sources */,
 				B800FFEA1CF302E300442C6F /* ChatViewController.m in Sources */,
 				B83BB1A31CF2EF67008DE9E9 /* ChatCell.m in Sources */,

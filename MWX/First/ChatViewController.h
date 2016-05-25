@@ -6,13 +6,14 @@
 //  Copyright © 2016年 YQ. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 #import "FirendModel.h"
 #import "TalkTableView.h"
 
-@interface ChatViewController : UIViewController
+@interface ChatViewController : BaseViewController
 
 @property (nonatomic, strong) FirendModel *model;
 @property (nonatomic, strong) TalkTableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *editView;
 
 @end

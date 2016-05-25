@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Common.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [AVOSCloud setApplicationId:AppID clientKey:AppKey];
+//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+//    manager.enable = YES;
+//    manager.shouldResignOnTouchOutside = YES;
+//    manager.shouldToolbarUsesTextFieldTintColor = YES;
+//    manager.enableAutoToolbar = NO;
     
     return YES;
 }

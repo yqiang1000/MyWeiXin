@@ -10,4 +10,7 @@
 
 @interface FirstViewController : BaseViewController
 
+@property (strong, nonatomic) NSMutableDictionary *conversationDic;
+
+
 @end

@@ -33,7 +33,7 @@
         NSLog(@"^^^^%@",self.client);
         AVIMConversationQuery *query = [self.client conversationQuery];
         NSLog(@"&&&&&%@",query);
-        [query getConversationById:@"573d74d71ea49300645de961" callback:^(AVIMConversation *conversation, NSError *error) {
+        [query getConversationById:@"5743fa46df0eea0063aca913" callback:^(AVIMConversation *conversation, NSError *error) {
             NSLog(@"*****%@",conversation);
             [conversation queryMessagesWithLimit:5 callback:^(NSArray *objects, NSError *error) {
                 NSLog(@"----%@",objects);

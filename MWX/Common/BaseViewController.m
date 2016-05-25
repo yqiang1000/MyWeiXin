@@ -40,9 +40,6 @@
         tableview.backgroundColor = [UIColor colorWithPatternImage:image];
     }
     
-    
-    
-    
 }
 
 
@@ -53,15 +50,25 @@
 }
 
 - (BOOL)userIsLogined {
-//    [AVUser logOut];
+
     AVUser *user = [AVUser currentUser];
+    __block BOOL isLoad = NO;
     if (user == nil) {
         LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
         [self presentViewController:loginVC animated:YES completion:nil];
-        return NO;
+        isLoad = NO;
     } else {
-        return YES;
+        self.client = [AVIMClient defaultClient];
+        [self.client openWithClientId:[AVUser currentUser].username callback:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                isLoad = YES;
+            } else {
+                NSLog(@"登录失败：%@",error);
+                isLoad = NO;
+            }
+        }];
     }
+    return isLoad;
 }
 
 
