@@ -20,6 +20,15 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.delegate = self;
+        self.dataSource = self;
+    }
+    return self;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -34,13 +43,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TalkCell *cell = [tableView dequeueReusableCellWithIdentifier:@"talkCell"];
-//    MessageModel *model = _data[indexPath.row];
+
     if (cell == nil) {
-//        if (model.isSelf) {
-            cell = [[[NSBundle mainBundle] loadNibNamed:@"TalkCell" owner:self options:nil] lastObject];
-//        } else {
-//            cell = [[[NSBundle mainBundle] loadNibNamed:@"TalkCell" owner:self options:nil] firstObject];
-//        }
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"TalkCell" owner:self options:nil] lastObject];
     }
     return cell;
 }

@@ -52,23 +52,13 @@
 - (BOOL)userIsLogined {
 
     AVUser *user = [AVUser currentUser];
-    __block BOOL isLoad = NO;
     if (user == nil) {
         LoginTableViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginVC"];
         [self presentViewController:loginVC animated:YES completion:nil];
-        isLoad = NO;
+        return NO;
     } else {
-        self.client = [AVIMClient defaultClient];
-        [self.client openWithClientId:[AVUser currentUser].username callback:^(BOOL succeeded, NSError *error) {
-            if (succeeded) {
-                isLoad = YES;
-            } else {
-                NSLog(@"登录失败：%@",error);
-                isLoad = NO;
-            }
-        }];
+        return YES;
     }
-    return isLoad;
 }
 
 

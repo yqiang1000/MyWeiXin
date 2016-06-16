@@ -33,6 +33,7 @@
 		B83C672A1CF2AAC100E8956B /* SearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C67291CF2AAC100E8956B /* SearchTableView.m */; };
 		B83C672E1CF2AD1200E8956B /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B83C672C1CF2AD1200E8956B /* SearchCell.m */; };
 		B83C672F1CF2AD1200E8956B /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83C672D1CF2AD1200E8956B /* SearchCell.xib */; };
+		B873C37A1D124E85006867A9 /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B873C3791D124E85006867A9 /* ChatTableViewController.m */; };
 		B88993091CEAAE5D00E12523 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88993081CEAAE5D00E12523 /* main.m */; };
 		B889930C1CEAAE5D00E12523 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B889930B1CEAAE5D00E12523 /* AppDelegate.m */; };
 		B88993121CEAAE5D00E12523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88993101CEAAE5D00E12523 /* Main.storyboard */; };
@@ -147,6 +148,8 @@
 		B83C672B1CF2AD1200E8956B /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCell.h; path = MWX/Second/SearchCell.h; sourceTree = SOURCE_ROOT; };
 		B83C672C1CF2AD1200E8956B /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCell.m; path = MWX/Second/SearchCell.m; sourceTree = SOURCE_ROOT; };
 		B83C672D1CF2AD1200E8956B /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchCell.xib; path = MWX/Second/SearchCell.xib; sourceTree = SOURCE_ROOT; };
+		B873C3781D124E85006867A9 /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		B873C3791D124E85006867A9 /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
 		B88993041CEAAE5D00E12523 /* MWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88993081CEAAE5D00E12523 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B889930A1CEAAE5D00E12523 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 				B88993531CEAB09000E12523 /* FirstViewController.m */,
 				B800FFE81CF302E300442C6F /* ChatViewController.h */,
 				B800FFE91CF302E300442C6F /* ChatViewController.m */,
+				B873C3781D124E85006867A9 /* ChatTableViewController.h */,
+				B873C3791D124E85006867A9 /* ChatTableViewController.m */,
 				B889933F1CEAB07A00E12523 /* Model */,
 				B88993401CEAB07A00E12523 /* ModelView */,
 				B88993411CEAB07A00E12523 /* View */,
@@ -820,6 +825,7 @@
 				B88993911CEB0A7300E12523 /* AutoHideHub.m in Sources */,
 				B83C672A1CF2AAC100E8956B /* SearchTableView.m in Sources */,
 				B83284671CEDB09B003C8450 /* AVOSCloudManager.m in Sources */,
+				B873C37A1D124E85006867A9 /* ChatTableViewController.m in Sources */,
 				B83C35691CEC705B0054C471 /* FourthViewController.m in Sources */,
 				B8950B901CF4473A00063127 /* ConverSationModel.m in Sources */,
 				B83C672E1CF2AD1200E8956B /* SearchCell.m in Sources */,

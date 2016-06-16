@@ -24,6 +24,6 @@ typedef void(^CompleteBlock)(AVIMConversation *conversation, BOOL isSave);
 
 
 //get conversation
-- (void)queryConversationWithName:(NSString *)name complete:(CompleteBlock)block;
+- (void)queryConversationWithClient:(AVIMClient *)client conversationName:(NSString *)name complete:(CompleteBlock)block;
 
 @end

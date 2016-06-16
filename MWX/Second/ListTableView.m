@@ -11,6 +11,7 @@
 #import "AVOSCloudManager.h"
 #import "UIView+UIViewController.h"
 #import "ChatViewController.h"
+#import "ChatTableViewController.h"
 
 @implementation ListTableView
 
@@ -57,7 +58,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ChatViewController *chatVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ChatVC"];
+    ChatViewController *chatVC = [[ChatViewController alloc] init];
     chatVC.model = _array[indexPath.row];
     [self.viewController.tabBarController.tabBar setHidden:YES];
     [self.viewController.navigationController pushViewController:chatVC animated:YES];
