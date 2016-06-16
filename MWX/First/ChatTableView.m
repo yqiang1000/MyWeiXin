@@ -43,7 +43,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ChatViewController *chatVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ChatVC"];
+    ChatViewController *chatVC = [[ChatViewController alloc] init];
     [self.viewController.navigationController pushViewController:chatVC animated:YES];
 }
 

@@ -11,7 +11,6 @@
 #import "AVOSCloudManager.h"
 #import "UIView+UIViewController.h"
 #import "ChatViewController.h"
-#import "ChatTableViewController.h"
 
 @implementation ListTableView
 
