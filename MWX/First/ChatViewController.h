@@ -14,6 +14,6 @@
 
 @property (nonatomic, strong) FirendModel *model;
 @property (nonatomic, strong) TalkTableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *editView;
+@property (nonatomic, strong) UIView *editView;
 
 @end

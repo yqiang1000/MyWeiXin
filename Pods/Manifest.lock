@@ -3,6 +3,7 @@ PODS:
   - AVOSCloudIM (3.1.2.9):
     - AVOSCloud
   - IQKeyboardManager (3.3.4)
+  - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
   - ReactiveCocoa (2.0):
     - ReactiveCocoa/Core (= 2.0)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - AVOSCloud (= 3.1.2.9)
   - AVOSCloudIM (= 3.1.2.9)
   - IQKeyboardManager
+  - Masonry
   - MBProgressHUD
   - ReactiveCocoa (= 2.0)
 
@@ -25,6 +27,7 @@ SPEC CHECKSUMS:
   AVOSCloud: 7d2406a4954c15c98363ce841b257b81cdba0bc9
   AVOSCloudIM: 07f8d18692923c70d909ec82b7776210d38535d5
   IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   ReactiveCocoa: c5347d7b1c348d22a85800e14e89da84c5254cfb
 

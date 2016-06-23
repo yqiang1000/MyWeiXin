@@ -73,9 +73,17 @@
 - (void)setTableView {
 //    CGRectMake(0, 64, kWidth, kHeight-64-40)
     if (self.tableView == nil) {
-        self.tableView = [[TalkTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        [self.view insertSubview:_tableView belowSubview:_editView];
+        self.tableView = [[TalkTableView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 104) style:UITableViewStylePlain];
+        [self.view addSubview:self.tableView];
+        
     }
+    
+    if (self.editView == nil) {
+        self.editView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40)];
+        self.editView.backgroundColor = [UIColor redColor];
+        [self.view addSubview:self.editView];
+    }
+    
 }
 
 - (void)setNavi {
@@ -91,8 +99,6 @@
 - (void)backAction:(UIButton *)button {
     self.tabBarController.tabBar.hidden = NO;
     [self.navigationController popViewControllerAnimated:YES];
-    self.tabBarController.selectedIndex = 0;
-    
 }
 
 @end

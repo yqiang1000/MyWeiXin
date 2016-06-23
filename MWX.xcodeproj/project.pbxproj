@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B800FFEA1CF302E300442C6F /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B800FFE91CF302E300442C6F /* ChatViewController.m */; };
+		B808D86F1D1B866000E4D47F /* EditView.m in Sources */ = {isa = PBXBuildFile; fileRef = B808D86E1D1B866000E4D47F /* EditView.m */; };
 		B81FC9831CEEB2E7003DF197 /* FirendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC9821CEEB2E7003DF197 /* FirendModel.m */; };
 		B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FC98A1CEEFB52003DF197 /* SearchViewController.m */; };
 		B81FC98D1CEEFB52003DF197 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81FC98B1CEEFB52003DF197 /* SearchViewController.xib */; };
@@ -97,6 +98,8 @@
 		B13466AEC02409271E5A7AA1 /* Pods-MWX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.release.xcconfig"; sourceTree = "<group>"; };
 		B800FFE81CF302E300442C6F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		B800FFE91CF302E300442C6F /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		B808D86D1D1B866000E4D47F /* EditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditView.h; path = MWX/First/EditView.h; sourceTree = SOURCE_ROOT; };
+		B808D86E1D1B866000E4D47F /* EditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditView.m; path = MWX/First/EditView.m; sourceTree = SOURCE_ROOT; };
 		B81FC9811CEEB2E7003DF197 /* FirendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirendModel.h; path = MWX/Second/FirendModel.h; sourceTree = SOURCE_ROOT; };
 		B81FC9821CEEB2E7003DF197 /* FirendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirendModel.m; path = MWX/Second/FirendModel.m; sourceTree = SOURCE_ROOT; };
 		B81FC9891CEEFB52003DF197 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -386,6 +389,8 @@
 				B83BB19E1CF2E821008DE9E9 /* ChatTableView.m */,
 				B8950B7D1CF3F9E700063127 /* TalkTableView.h */,
 				B8950B7E1CF3F9E700063127 /* TalkTableView.m */,
+				B808D86D1D1B866000E4D47F /* EditView.h */,
+				B808D86E1D1B866000E4D47F /* EditView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -802,6 +807,7 @@
 				B889938D1CEB07CB00E12523 /* BaseViewController.m in Sources */,
 				B88993661CEAB15100E12523 /* BaseNavigationController.m in Sources */,
 				EE5E00681CEEEEA600FEDBCB /* ThemeTableViewController.m in Sources */,
+				B808D86F1D1B866000E4D47F /* EditView.m in Sources */,
 				B889938A1CEB049A00E12523 /* RegisterController.m in Sources */,
 				B81FC98C1CEEFB52003DF197 /* SearchViewController.m in Sources */,
 				B88993781CEAB81D00E12523 /* BaseTabBarController.m in Sources */,

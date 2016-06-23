@@ -4,4 +4,5 @@ target ‘MWX’ do
 	pod ‘ReactiveCocoa’, ‘2.0’
 	pod ‘IQKeyboardManager’
 	pod ‘MBProgressHUD’
+	pod ‘Masonry’
 end
