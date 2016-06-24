@@ -9,11 +9,12 @@
 #import "BaseViewController.h"
 #import "FirendModel.h"
 #import "TalkTableView.h"
+#import "EditView.h"
 
 @interface ChatViewController : BaseViewController
 
 @property (nonatomic, strong) FirendModel *model;
 @property (nonatomic, strong) TalkTableView *tableView;
-@property (nonatomic, strong) UIView *editView;
+@property (nonatomic, strong) EditView *editView;
 
 @end

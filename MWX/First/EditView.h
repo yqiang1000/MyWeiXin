@@ -8,7 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditView : UIView
+@class EditView;
+
+@protocol EditViewDelegate <NSObject>
+
+-(void)editView:(EditView *)editView textFiledReturn:(UITextField *)textFiled;
+-(void)editView:(EditView *)editView textFiledBegin:(UITextField *)textFiled;
+-(void)beginRecord;
+-(void)finishRecord;
+
+@end
+
+
+@interface EditView : UIView<EditViewDelegate>
+
+@property (strong, nonatomic) UITextField *text;
+@property (strong, nonatomic) UIButton *emoji;
+@property (strong, nonatomic) UIButton *more;
+@property (strong, nonatomic) UIButton *voice;
+
+@property (assign, nonatomic) id<EditViewDelegate> delegate;
+
 
 
 @end
+
