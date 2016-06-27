@@ -20,12 +20,13 @@
 @end
 
 
-@interface EditView : UIView<EditViewDelegate>
+@interface EditView : UIView<EditViewDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic) UITextField *text;
 @property (strong, nonatomic) UIButton *emoji;
 @property (strong, nonatomic) UIButton *more;
 @property (strong, nonatomic) UIButton *voice;
+@property (strong, nonatomic) UIButton *speak;
 
 @property (assign, nonatomic) id<EditViewDelegate> delegate;
 
