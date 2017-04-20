@@ -111,6 +111,7 @@
 
 /* Begin PBXFileReference section */
 		2A2C673E279F2A29E86B0726 /* libPods-MWX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		478CB1B31EA88B1000C0FF18 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6B78C392992F9A54949CA50D /* Pods-MWX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.debug.xcconfig"; sourceTree = "<group>"; };
 		B13466AEC02409271E5A7AA1 /* Pods-MWX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWX/Pods-MWX.release.xcconfig"; sourceTree = "<group>"; };
 		B800FFE81CF302E300442C6F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
@@ -401,6 +402,7 @@
 				EE5E00761CEEF1F800FEDBCB /* ThemeManager.m */,
 				B83BB1AB1CF2F8F5008DE9E9 /* UIView+UIViewController.h */,
 				B83BB1AC1CF2F8F5008DE9E9 /* UIView+UIViewController.m */,
+				478CB1B31EA88B1000C0FF18 /* PrefixHeader.pch */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -733,6 +735,7 @@
 				TargetAttributes = {
 					B88993031CEAAE5D00E12523 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3WYE463P9W;
 					};
 					B889931C1CEAAE5D00E12523 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -1057,7 +1060,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3WYE463P9W;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MWX/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = MWX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1077,7 +1083,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3WYE463P9W;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MWX/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = MWX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

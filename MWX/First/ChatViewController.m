@@ -10,6 +10,7 @@
 #import "FirstViewController.h"
 #import "Common.h"
 #import <IQKeyboardManager.h>
+//#import <Masonry.h>
 
 @implementation ChatViewController
 
@@ -34,7 +35,8 @@
 //    [UIView animateWithDuration:0.05 animations:^{
 //        self.editView.frame = CGRectMake(0, kHeight - keyboardSize.height - 40, kWidth, 40);
 //    }];
-//    
+//
+    
     CGRect keyBoardRect=[note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGFloat deltaY=keyBoardRect.size.height;
     
@@ -94,6 +96,9 @@
 //        self.editView.backgroundColor = [UIColor redColor];
         [self.view addSubview:self.editView];
     }
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
     
 }
 
